@@ -2,53 +2,46 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="w-full font-sans">
+    <nav className="w-full">
       {/* ----------------announcement banner------------- */}
-      <div className="bg-[#111111] text-white py-3 px-4 text-center text-sm md:text-base font-medium border-b border-white/10">
-        <a href="#" className="hover:underline">
+      <div className="bg-primary text-white text-center text-[13px] hover:bg-zinc-800 cursor-pointer h-[2.2rem] py-2 tracking-tight">
+        <span className="group inline-flex items-center hover:text-gray-300 transition-colors">
           Stop managing your database. Let Forge handle backups, patching, and
-          failover for you. Learn more →
-        </a>
+          failover for you. Learn more
+          <span className="ml-1 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+            →
+          </span>
+        </span>
       </div>
 
       {/*------------ Main Nav --------------*/}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo Section */}
-          <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-black tracking-tighter italic text-[#0B121E]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
+        <div className="flex items-center h-16">
+          <div className="flex flex-1 items-center justify-start -ml-9">
+            <span className="text-2xl font-black tracking-tighter italic text-[#0B121E] cursor-pointer">
               FORGE
             </span>
           </div>
 
           {/*----------- Links------------ */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 font-medium"
-            >
+          <div className="hidden md:flex flex-1 items-center justify-center space-x-7 ">
+            <span className="text-gray-500 hover:text-gray-900 font-medium cursor-pointer">
               Pricing
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 font-medium"
-            >
+            </span>
+            <span className="text-gray-500 hover:text-gray-900 font-medium cursor-pointer">
               Docs
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 font-medium"
-            >
+            </span>
+            <span className="text-gray-500 hover:text-gray-900 font-medium cursor-pointer">
               Enterprise
-            </a>
+            </span>
           </div>
 
           {/* -----------Auth Buttons ---------------*/}
-          <div className="flex items-center space-x-4">
-            <button className="px-5 py-2 text-gray-700 font-medium border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">
+          <div className="flex flex-1 items-center justify-end space-x-3 -mr-10">
+            <button className="px-[12.9px] py-[5.5px] text-gray-700 text-sm font-medium border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer">
               Log in
             </button>
-            <button className="px-5 py-2 bg-[#111111] text-white font-medium rounded-md hover:bg-black transition-colors">
+            <button className="px-[12.9px] py-[5.5px] border border-primary bg-primary text-white text-sm font-medium  rounded-md hover:bg-zinc-800 transition-colors cursor-pointer">
               Deploy server
             </button>
           </div>
