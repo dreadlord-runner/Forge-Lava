@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="w-full">
+    <nav className="w-full pb-15">
       {/* ----------------announcement banner------------- */}
-      <div className="bg-primary text-white text-center text-[13px] hover:bg-zinc-800 cursor-pointer h-[2.2rem] py-2 tracking-tight">
+      <div className="bg-dark text-white text-center text-[13px] hover:bg-zinc-800 cursor-pointer h-[2.2rem] py-2 tracking-tight">
         <span className="group inline-flex items-center hover:text-gray-300 transition-colors">
           Stop managing your database. Let Forge handle backups, patching, and
           failover for you. Learn more
@@ -38,10 +38,10 @@ const Navbar = () => {
 
           {/* -----------Auth Buttons ---------------*/}
           <div className="flex flex-1 items-center justify-end space-x-3 -mr-10">
-            <button className="px-[12.9px] py-[5.5px] text-gray-700 text-sm font-medium border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer">
+            <button className="px-[14px] py-[5.5px] text-gray-700 text-sm font-medium border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer shadow-forge">
               Log in
             </button>
-            <button className="px-[12.9px] py-[5.5px] border border-primary bg-primary text-white text-sm font-medium  rounded-md hover:bg-zinc-800 transition-colors cursor-pointer">
+            <button className="px-[12px] py-[5.5px] border border-dark bg-dark text-white text-sm font-medium  rounded-md hover:bg-zinc-800 transition-colors cursor-pointer shadow-forge">
               Deploy server
             </button>
           </div>
