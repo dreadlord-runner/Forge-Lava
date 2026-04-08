@@ -104,46 +104,49 @@ const DeploymentPlatform = () => {
               Forge installs Nginx, PHP, MySQL, Postgres, Redis, and all the
               essentials on your cloud of choice.
             </p>
-            {/* ---------card 2 container-------- */}
-            <div className="relative p-2 rounded-tl-2xl border-t border-l border-gray-100 mt-auto overflow-hidden">
-              <div className="border rounded-xl p-2 border-gray-200">
-                <div className="relative space-y-8 pb-12 pr-12 w-[150%] sm:w-full">
-                  <div className="absolute left-[11px] top-4 bottom-0 w-px bg-gray-200 -z-10"></div>
 
-                  <div className="flex items-center space-x-6">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center">
-                      <CircleCheck size={22} />
+            <div className="relative pt-6 pl-6 rounded-tl-2xl mt-auto overflow-hidden">
+              <div className="border rounded-xl p-2 border-gray-200">
+                <div className="relative border rounded-xl border-gray-200 p-6 md:p-8 min-h-[275px]">
+                  <div className="absolute left-[43px] top-8 bottom-8 w-px bg-gray-200"></div>
+
+                  <div className="relative space-y-8 pr-6">
+                    <div className="flex items-center space-x-6">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white z-10">
+                        <CircleCheck size={22} />
+                      </div>
+                      <span className="text-gray-900 font-medium">
+                        Securing your server
+                      </span>
                     </div>
-                    <span className="text-gray-900 font-medium">
-                      Securing your server
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-6">
-                    <div className="w-6 h-6 text-[#10B981] flex items-center justify-center">
-                      <CircleDot size={22} />
+                    <div className="flex items-center space-x-6">
+                      <div className="w-6 h-6 text-[#10B981] flex items-center justify-center bg-white z-10">
+                        <CircleDot size={22} />
+                      </div>
+                      <span className="text-gray-900 font-medium">
+                        Installing base dependencies
+                      </span>
                     </div>
-                    <span className="text-gray-900 font-medium">
-                      Installing base dependencies
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-6">
-                    <div className="w-6 h-6 text-[#10B981] flex items-center justify-center">
-                      <CircleDot size={22} />
+                    <div className="flex items-center space-x-6">
+                      <div className="w-6 h-6 text-[#10B981] flex items-center justify-center bg-white z-10">
+                        <CircleDot size={22} />
+                      </div>
+                      <span className="text-gray-900 font-medium">
+                        Installing PHP
+                      </span>
                     </div>
-                    <span className="text-gray-900 font-medium">
-                      Installing PHP
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-6">
-                    <div className="w-6 h-6 text-[#10B981] flex items-center justify-center">
-                      <CircleDot size={22} />
+                    <div className="flex items-center space-x-6 opacity-60">
+                      <div className="w-6 h-6 text-[#10B981] flex items-center justify-center bg-white z-10">
+                        <CircleDot size={22} />
+                      </div>
+                      <span className="text-gray-900 font-medium">
+                        Installing Nginx
+                      </span>
                     </div>
-                    <span className="text-gray-900 font-medium">
-                      Installing Nginx
-                    </span>
                   </div>
                 </div>
               </div>
+
               <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
             </div>
