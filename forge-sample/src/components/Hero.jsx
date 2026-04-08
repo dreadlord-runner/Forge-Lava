@@ -11,30 +11,30 @@ const Hero = () => {
         <div className="absolute top-0 right-0 -mr-40 -mt-20 w-[600px] h-[600px] bg-[#10B981]/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute top-40 left-0 -ml-40 w-[500px] h-[500px] bg-[#10B981]/5 rounded-full blur-3xl pointer-events-none"></div>
       </div>
-      <div className="flex justify-center mb-8">
-        <div className="h-8 w-54 inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-gray-200 bg-white shadow-sm text-xs font-medium text-gray-600 hover:bg-gray-50 cursor-pointer transition-colors text-nowrap">
+      <div className="flex justify-center mb-5">
+        <div className="h-8 w-54 inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-gray-200 bg-white shadow-sm text-sm font-medium text-gray-600 hover:bg-gray-50 cursor-pointer transition-colors text-nowrap">
           <Layers size={18} className="text-red-500" />
           <span className>Introducing Laravel VPS</span>
           <ArrowRight size={18} />
         </div>
       </div>
       <div className="max-w-5xl mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-dark">
+        <h1 className="text-4xl md:text-[4.2rem] font-semibold tracking-tight text-dark">
           The web is your frontier
         </h1>
 
-        <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-5 text-xl text-gray-600 max-w-4xl mx-auto">
           Forge gives root access to servers without the cognitive overhead.
-          One-click instant provisioning, zero-downtime deployments, and
+          One-click instant <br /> provisioning, zero-downtime deployments, and
           automated SSL.
         </p>
 
-        <div className="mt-8 flex justify-center gap-4 mb-30">
-          <button className="px-6 py-3 bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
+        <div className="mt-12 flex justify-center gap-3 mb-30">
+          <button className="px-5 py-[8.9px] border border-dark bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
             Deploy server
           </button>
 
-          <button className="px-6 py-3 border rounded-lg text-sm hover:bg-gray-100 transition">
+          <button className="px-5 py-[8.9px] border border-gray-200 rounded-lg text-sm hover:bg-gray-100 transition shadow-forge">
             Read Docs
           </button>
         </div>
