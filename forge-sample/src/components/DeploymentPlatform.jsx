@@ -6,7 +6,9 @@ import laravelVpsIcon from "../assets/images/Laravel VPS.svg";
 import reactIcon from "../assets/images/React.svg";
 import vultrIcon from "../assets/images/Vultr.svg";
 import { CircleCheck, CircleDot } from "lucide-react";
-
+import { FaLaravel, FaSymfony, FaWordpress } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiNuxt, SiStatamic } from "react-icons/si";
 const DeploymentPlatform = () => {
   const providerIcons = {
     "Laravel VPS": laravelVpsIcon,
@@ -53,7 +55,7 @@ const DeploymentPlatform = () => {
         {/* ---------2x2 grid----------- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 mt-12 rounded-tl-xl overflow-hidden">
           {/*--------Card 1------ */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col bg-white">
+          <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
               Launch your app your way
             </h3>
@@ -96,7 +98,7 @@ const DeploymentPlatform = () => {
           </div>
 
           {/*-----------card 2---------- */}
-          <div className="p-10 md:p-14 border-r border-b border-gray-100 flex flex-col bg-white">
+          <div className="p-10 md:p-10 border-r border-b border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
               A full server stack, ready in minutes{" "}
             </h3>
@@ -153,7 +155,7 @@ const DeploymentPlatform = () => {
           </div>
 
           {/* --------card 3--------- */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col bg-white">
+          <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
               Create any type of server{" "}
             </h3>
@@ -190,6 +192,63 @@ const DeploymentPlatform = () => {
                 <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
                 <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
               </div>
+            </div>
+          </div>
+
+          {/* ---------card 4--------- */}
+          <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">
+              Laravel-built, ready for anything
+            </h3>
+            <p className="text-gray-500 mb-12 leading-relaxed">
+              Forge deploys and supports vanilla PHP, Nuxt, Next.js, <br />{" "}
+              Wordpress, and Statamic apps.
+            </p>
+
+            <div className="relative h-[270px] p-2 rounded-tl-2xl border-t border-l border-gray-200 mt-auto overflow-hidden bg-[#fbfcfb]">
+              <div className="relative h-full rounded-tl-2xl border-t border-l p-2 border-gray-200 bg-white">
+                <div className="h-full overflow-hidden pb-12 pr-12 w-[150%] sm:w-full pt-4 pl-4">
+                  <div className="flex items-center space-x-4 p-1 rounded-md m-1 hover:bg-gray-100">
+                    <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-md text-white">
+                      <FaLaravel size={16} />
+                    </div>
+                    <span className="font-medium text-gray-900">Laravel</span>
+                  </div>
+                  <div className="flex items-center space-x-4 p-1 m-1 rounded-md bg-gray-100">
+                    <div className="w-6 h-6 flex items-center justify-center bg-dark rounded-md text-white">
+                      <RiNextjsFill size={20} />
+                    </div>
+                    <span className="font-medium text-gray-900">Next.js</span>
+                  </div>
+                  <div className="flex items-center space-x-4 p-1 m-1 rounded-md hover:bg-gray-100">
+                    <div className="w-6 h-6 flex items-center justify-center bg-[#00DC82] rounded-md text-white">
+                      <SiNuxt size={18} />
+                    </div>
+                    <span className="font-medium text-gray-900">Nuxt.js</span>
+                  </div>
+                  <div className="flex items-center space-x-4 p-1 m-1 rounded-md hover:bg-gray-100">
+                    <div className="w-6 h-6 flex items-center justify-center bg-dark rounded-md text-white">
+                      <FaSymfony size={18} />
+                    </div>
+                    <span className="font-medium text-gray-900">Symfony</span>
+                  </div>
+                  <div className="flex items-center space-x-4 p-1 m-1 rounded-md hover:bg-gray-100">
+                    <div className="w-6 h-6 flex items-center justify-center bg-pink-500 rounded-md text-white">
+                      <SiStatamic size={18} />
+                    </div>
+                    <span className="font-medium text-gray-900">Statamic</span>
+                  </div>
+                  <div className="flex items-center space-x-4 p-1 m-1 rounded-md hover:bg-gray-100">
+                    <div className="w-6 h-6 flex items-center justify-center bg-blue-800 rounded-md text-white">
+                      <FaWordpress size={20} />
+                    </div>
+                    <span className="font-medium text-gray-900">WordPress</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
             </div>
           </div>
         </div>
