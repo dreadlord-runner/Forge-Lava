@@ -31,7 +31,7 @@ const DeploymentPlatform = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/*--------Header------- */}
         <div className="mb-16 max-w-3xl">
-          <div className="flex items-center space-x-3 font-mono text-xs mb-8">
+          <div className="flex items-center space-x-3 font-mono text-xs mb-18">
             <span className="text-gray-400">1</span>
             <span className="text-[#5cccb8] uppercase tracking-wider">
               The Deplpoyment Platform
@@ -41,12 +41,12 @@ const DeploymentPlatform = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4">
+          <h2 className="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight mb-4 ml-15 ">
             Simplify your deployments, build great apps
           </h2>
-          <p className="text-xl text-gray-500 leading-relaxed">
-            Simplify deployment and server management with tools that scale,
-            without the DevOps complexity.
+          <p className="text-xl text-gray-500 leading-relaxed ml-15">
+            Simplify deployment and server management with tools that <br />{" "}
+            scale, without the DevOps complexity.
           </p>
         </div>
 
@@ -54,18 +54,18 @@ const DeploymentPlatform = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 mt-12 rounded-tl-xl overflow-hidden">
           {/*--------Card 1------ */}
           <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col bg-white">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">
               Launch your app your way
             </h3>
-            <p className="text-gray-500 mb-12 text-lg leading-relaxed">
-              Spin up a Laravel VPS with instant provisioning or connect to your
-              favorite cloud provider in minutes.
+            <p className="text-gray-500 mb-12 leading-relaxed">
+              Spin up a Laravel VPS with instant provisioning or <br /> connect
+              to your favorite cloud provider in minutes.
             </p>
 
             {/* -----card 1 containers------- */}
             <div className="relative pt-6 pl-6 rounded-tl-2xl mt-auto overflow-hidden">
-              <div className="border rounded-xl p-2 border-gray-200">
-                <div className="border rounded-xl p-4 border-gray-200">
+              <div className="border rounded-xl p-2 border-gray-200 bg-[#fbfcfb]">
+                <div className="border rounded-xl p-4 border-gray-200 bg-white">
                   <div className="grid grid-cols-3 gap-3 ">
                     {providers.map((item, i) => (
                       <div
@@ -97,17 +97,17 @@ const DeploymentPlatform = () => {
 
           {/*-----------card 2---------- */}
           <div className="p-10 md:p-14 border-r border-b border-gray-100 flex flex-col bg-white">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">
               A full server stack, ready in minutes{" "}
             </h3>
-            <p className="text-gray-500 mb-12 text-lg leading-relaxed">
-              Forge installs Nginx, PHP, MySQL, Postgres, Redis, and all the
-              essentials on your cloud of choice.
+            <p className="text-gray-500 mb-12  leading-relaxed">
+              Forge installs Nginx, PHP, MySQL, Postgres, Redis, <br /> and all
+              the essentials on your cloud of choice.
             </p>
 
             <div className="relative pt-6 pl-6 rounded-tl-2xl mt-auto overflow-hidden">
-              <div className="border rounded-xl p-2 border-gray-200">
-                <div className="relative border rounded-xl border-gray-200 p-6 md:p-8 min-h-[275px]">
+              <div className="border rounded-xl p-2 border-gray-200 bg-[#fbfcfb]">
+                <div className="relative border rounded-xl border-gray-200 bg-white p-6 md:p-8 min-h-[275px]">
                   <div className="absolute left-[43px] top-8 bottom-8 w-px bg-gray-200"></div>
 
                   <div className="relative space-y-8 pr-6">
@@ -151,6 +151,8 @@ const DeploymentPlatform = () => {
               <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
             </div>
           </div>
+
+          {/* -----card 3--------- */}
         </div>
       </div>
     </section>
