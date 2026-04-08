@@ -1,13 +1,28 @@
 import React from "react";
+import awsIcon from "../assets/images/AWS.svg";
+import canvaIcon from "../assets/images/Canva.svg";
+import digitalOceanIcon from "../assets/images/DigitalOcean.svg";
+import laravelVpsIcon from "../assets/images/Laravel VPS.svg";
+import reactIcon from "../assets/images/React.svg";
+import vultrIcon from "../assets/images/Vultr.svg";
 
 const Features = () => {
+  const providerIcons = {
+    "Laravel VPS": laravelVpsIcon,
+    DigitalOcean: digitalOceanIcon,
+    AWS: awsIcon,
+    Vultr: vultrIcon,
+    React: reactIcon,
+    Canva: canvaIcon,
+  };
+
   const providers = [
     { name: "Laravel VPS", active: true },
     { name: "DigitalOcean" },
     { name: "AWS" },
     { name: "Vultr", disabled: true },
-    { name: "Hetzner", disabled: true },
-    { name: "Custom VPS", disabled: true },
+    { name: "React", disabled: true },
+    { name: "Canva", disabled: true },
   ];
 
   return (
@@ -31,8 +46,13 @@ const Features = () => {
                   key={i}
                   className={`rounded-xl border p-5 flex flex-col items-center justify-center gap-3 transition-all duration-200 ${item.active ? "border-emerald-500 shadow-forge" : "border-gray-200"} ${item.disabled ? "opacity-40" : "hover:border-emerald-400 cursor-pointer"}`}
                 >
+                  {/*--------ICONS---------- */}
                   <div className="w-10 h-10 rounded-md bg-gray-200 flex items-center justify-center">
-                    {/* CIONS */}
+                    <img
+                      src={providerIcons[item.name]}
+                      alt={`${item.name} icon`}
+                      className="w-6 h-6 object-contain"
+                    />
                   </div>
 
                   <p className="text-sm font-medium text-gray-700">
