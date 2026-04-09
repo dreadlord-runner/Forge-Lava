@@ -64,8 +64,8 @@ const Hero = () => {
             <div className="absolute inset-0 bg-black/40"></div>
 
             <div className="absolute inset-0 flex items-center justify-center z-10">
-              <span className="flex items-center border px-5 py-3 rounded-full bg-dark text-white hover:bg-zinc-800 cursor-pointer">
-                <CirclePlay className="mr-2" />
+              <span className="flex items-center border border-dark px-3 py-2 rounded-full bg-dark text-white hover:bg-zinc-800 cursor-pointer">
+                <CirclePlay size={36} className="mr-2" />
                 FORGE IN 4 MIN
               </span>
             </div>
