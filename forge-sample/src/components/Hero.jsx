@@ -1,6 +1,7 @@
 import React from "react";
 import { CirclePlay } from "lucide-react";
 import { ArrowRight, Layers } from "lucide-react";
+import bannerVideo from "../assets/images/banner.mp4";
 
 const Hero = () => {
   return (
@@ -43,15 +44,27 @@ const Hero = () => {
       {/*--------------Video Dashboard----------*/}
       <div className="relative mx-auto w-full max-w-[1300px]">
         <div className="rounded-xl ring-1 ring-gray-900/5 shadow-2xl overflow-hidden bg-white ">
-          {/* image or video */}
-          <div className="w-full aspect-[16/9] bg-gray-50 border-b border-gray-100 flex flex-col">
-            <div className="h-10 border-b border-gray-200 bg-white flex items-center px-4 space-x-2">
+          {/* -----------video---------- */}
+          <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
+            <div className="absolute top-0 left-0 right-0 h-10 border-b border-gray-200 bg-white flex items-center px-4 space-x-2 z-20">
               <div className="w-3 h-3 rounded-full bg-red-400"></div>
               <div className="w-3 h-3 rounded-full bg-amber-400"></div>
               <div className="w-3 h-3 rounded-full bg-green-400"></div>
             </div>
-            <div className="flex-1 flex items-center justify-center text-gray-400 font-medium">
-              <span className="flex border p-4 rounded-full bg-dark text-white hover:bg-zinc-800">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              src={bannerVideo}
+              type="video/mp4"
+            ></video>
+
+            <div className="absolute inset-0 bg-black/40"></div>
+
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <span className="flex items-center border px-5 py-3 rounded-full bg-dark text-white hover:bg-zinc-800 cursor-pointer">
                 <CirclePlay className="mr-2" />
                 FORGE IN 4 MIN
               </span>

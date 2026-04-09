@@ -35,7 +35,7 @@ const DeploymentPlatform = () => {
         <div className="mb-16 max-w-3xl">
           <div className="flex items-center space-x-3 font-mono text-xs mb-18">
             <span className="text-gray-400">1</span>
-            <span className="text-[#5cccb8] uppercase tracking-wider">
+            <span className="text-[#5cccb8] uppercase">
               The Deplpoyment Platform
             </span>
             <span className="text-gray-400">
