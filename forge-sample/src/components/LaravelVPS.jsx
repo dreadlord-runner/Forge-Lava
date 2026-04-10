@@ -44,69 +44,69 @@ const LaravelVPS = () => {
             </p>
 
             {/* ------mock container of card 1-------- */}
-            <div className="relative pt-6 pl-6 rounded-tl-2xl border-t border-l border-white/10 mt-auto overflow-hidden bg-[#212321]">
-              <div className="pb-12 pr-12 w-[120%] sm:w-full">
-                <div className="flex items-center space-x-2 text-[#5cccb8] mb-6 pl-2">
-                  <Zap size={16} fill="currentColor" />
-                  <span className="font-semibold text-[#e5e5e5] text-sm">
-                    Instant servers
-                  </span>
-                </div>
-
-                <div className="space-y-3">
-                  {/*------------ Small Server--------- */}
-                  <div className="flex items-center space-x-4 p-2 rounded-lg border border-white/5 bg-white/5 hover:bg-white/6">
-                    <div className="w-4 h-4 text-red-500">
-                      <Server size={15} />
-                    </div>
-                    <div className="text-sm">
-                      <span className="text-gray-300">Small</span>
-                      <span className="text-gray-600 mx-2">·</span>
-                      <span className="text-gray-500">1 vCPU</span>
-                      <span className="text-gray-600 mx-2">·</span>
-                      <span className="text-gray-500">1 GB RAM</span>
-                      <span className="text-gray-600 mx-2">·</span>
-                      <span className="text-gray-500">25 GB Disk</span>
-                    </div>
+            <div className="w-[80%] h-[50%] relative left-10 bottom-20 pt-4 pl-4 rounded-tl-2xl border-t border-l border-white/10 mt-auto overflow-hidden bg-[#1b1d1b]">
+              <div className="p-6 -mt-2 -ml-2 border border-white/10 rounded-2xl bg-[#212321]">
+                <div className=" w-[110%] sm:w-full">
+                  <div className="flex items-center space-x-2 text-[#5cccb8] mb-6 pl-2">
+                    <Zap size={16} fill="currentColor" />
+                    <span className="font-semibold text-[#e5e5e5] text-sm">
+                      Instant servers
+                    </span>
                   </div>
 
-                  {/*----------- Medium Server--------------- */}
-                  <div className="flex items-center space-x-4 p-2 rounded-lg border-2 border-[#10B981]/50 bg-[#212321]/10 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:bg-white/1">
-                    <div className="w-4 h-4 text-red-500">
-                      <Server size={15} />
+                  <div className="space-y-2">
+                    {/*------------ Small Server--------- */}
+                    <div className="flex items-center space-x-4 p-2 rounded-lg border border-white/5 shadow-2xl bg-[#232522] hover:bg-white/2">
+                      <div className="w-4 h-4 text-red-500">
+                        <Server size={15} />
+                      </div>
+                      <div className="text-sm">
+                        <span className="text-gray-300">Small</span>
+                        <span className="text-gray-600 mx-2">·</span>
+                        <span className="text-gray-500">1 vCPU</span>
+                        <span className="text-gray-600 mx-2">·</span>
+                        <span className="text-gray-500">1 GB RAM</span>
+                        <span className="text-gray-600 mx-2">·</span>
+                        <span className="text-gray-500">25 GB Disk</span>
+                      </div>
                     </div>
-                    <div className="text-sm">
-                      <span className="text-white font-medium">Medium</span>
-                      <span className="text-[#10B981]/50 mx-2">·</span>
-                      <span className="text-gray-400">2 vCPU</span>
-                      <span className="text-[#10B981]/50 mx-2">·</span>
-                      <span className="text-gray-400">4 GB RAM</span>
-                      <span className="text-[#10B981]/50 mx-2">·</span>
-                      <span className="text-gray-400">80 GB Disk</span>
-                    </div>
-                  </div>
 
-                  {/* ------------Large Server------------ */}
-                  <div className="flex items-center space-x-4 p-2 rounded-lg border border-white/5 bg-white/5 opacity-50 hover:bg-white/8">
-                    <div className="w-4 h-4 text-red-500">
-                      <Server size={15} />
+                    {/*----------- Medium Server--------------- */}
+                    <div className="flex items-center space-x-4 p-2 rounded-lg border-2 border-[#10B981]/50 bg-[#1e211e] shadow-2xl hover:bg-white/2">
+                      <div className="w-4 h-4 text-red-500">
+                        <Server size={15} />
+                      </div>
+                      <div className="text-sm">
+                        <span className="text-white font-medium">Medium</span>
+                        <span className="text-[#10B981]/50 mx-2">·</span>
+                        <span className="text-gray-400">2 vCPU</span>
+                        <span className="text-[#10B981]/50 mx-2">·</span>
+                        <span className="text-gray-400">4 GB RAM</span>
+                        <span className="text-[#10B981]/50 mx-2">·</span>
+                        <span className="text-gray-400">80 GB Disk</span>
+                      </div>
                     </div>
-                    <div className="text-sm">
-                      <span className="text-gray-300">Large</span>
-                      <span className="text-gray-600 mx-2">·</span>
-                      <span className="text-gray-500">4 vCPU</span>
-                      <span className="text-gray-600 mx-2">·</span>
-                      <span className="text-gray-500">8 GB RAM</span>
-                      <span className="text-gray-600 mx-2">·</span>
-                      <span className="text-gray-500">160 GB Disk</span>
+
+                    {/* ------------Large Server------------ */}
+                    <div className="flex items-center space-x-4 p-2 rounded-lg border border-white/5 bg-[#232522] shadow-2xl opacity-50 hover:bg-white/4">
+                      <div className="w-4 h-4 text-red-500">
+                        <Server size={15} />
+                      </div>
+                      <div className="text-sm">
+                        <span className="text-gray-300">Large</span>
+                        <span className="text-gray-600 mx-2">·</span>
+                        <span className="text-gray-500">4 vCPU</span>
+                        <span className="text-gray-600 mx-2">·</span>
+                        <span className="text-gray-500">8 GB RAM</span>
+                        <span className="text-gray-600 mx-2">·</span>
+                        <span className="text-gray-500">160 GB Disk</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              {/*---------- Dark Mode Fades-------- */}
-              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-[#151715] pointer-events-none"></div>
-              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-[#151715] pointer-events-none"></div>
+              <div className="absolute inset-y-0 right-0 w-42 bg-gradient-to-r from-transparent to-[#151715] pointer-events-none"></div>
+              <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-b from-transparent to-[#151715] pointer-events-none"></div>
             </div>
           </div>
           {/*------------- Card 2-----------------*/}
@@ -120,7 +120,7 @@ const LaravelVPS = () => {
             {/*--------mock container of card 2-----------*/}
             <div className="relative mt-auto">
               {/*------------ Fake Terminal Window----------- */}
-              <div className="w-full max-w-md ml-auto rounded-xl border-t border-l border-white/10 bg-[#0a0a0a] overflow-hidden shadow-2xl">
+              <div className="w-full max-w-md ml-auto rounded-xl border-t border-l border-white/10 bg-[#0a0a0a] overflow-hidden">
                 {/*--------- Terminal Header--------- */}
                 <div className="flex items-center bg-[#18181b] border-b border-white/5 px-2 pt-2">
                   <div className="flex items-center space-x-2 bg-[#27272a] px-4 py-2 rounded-t-lg text-xs font-mono text-gray-300 border-t border-x border-white/5">
@@ -143,7 +143,7 @@ const LaravelVPS = () => {
               </div>
 
               {/*--------------- Floating Notification Toast---------------- */}
-              <div className="absolute bottom-1 bg-[#18181b] border border-white/10 rounded-2xl p-4 shadow-2xl max-w-[320px] flex items-start space-x-4 z-10">
+              <div className="absolute bottom-1 bg-[#18181b] border border-white/10 rounded-2xl p-4 max-w-[320px] flex items-start space-x-4 z-10">
                 <div className="relative flex-shrink-0">
                   <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-700">
                     <img
@@ -184,27 +184,29 @@ const LaravelVPS = () => {
       </div>
       {/* --- -----3-COLUMN ----- --- */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 border-y border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
-          <div className="py-12 md:py-16 md:pr-12">
-            <h4 className="text-lg font-bold mb-3">No external setup</h4>
-            <p className="text-gray-400 leading-relaxed">
+        <div className="flex flex-row border-y border-l border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div className="w-[7%] border border-white/10"> </div>
+          <div className="py-10 md:py-14 md:pr-12">
+            <h4 className="px-12 text-lg font-bold mb-3">No external setup</h4>
+            <p className="text-gray-400 leading-relaxed pl-12">
               Provision and manage servers without leaving Forge.
             </p>
           </div>
 
-          <div className="py-12 md:py-16 md:px-12">
+          <div className="py-10 md:py-14 md:px-12">
             <h4 className="text-lg font-bold mb-3">Centralized billing</h4>
             <p className="text-gray-400 leading-relaxed">
               Keep your infrastructure and payments in one place.
             </p>
           </div>
 
-          <div className="py-12 md:py-16 md:pl-12">
+          <div className="py-10 md:py-14 md:pl-12">
             <h4 className="text-lg font-bold mb-3">Stay ahead of issues</h4>
             <p className="text-gray-400 leading-relaxed">
               Track CPU, memory, and usage on your dashboard as it happens.
             </p>
           </div>
+          <div className="w-[7%] border border-white/10"> </div>
         </div>
       </div>
     </section>
