@@ -9,7 +9,7 @@ import FeaturesThatMatter from "./components/FeaturesThatMatter";
 
 const App = () => {
   return (
-    <div className="min-h-scren bg-white">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
       <DeploymentPlatform />
