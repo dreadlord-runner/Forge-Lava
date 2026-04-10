@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10">
-        {/* ------ BACKGROUND GLOW EFFECTS ------- */}
+        {/* ------ Backhground Glow Effect ------- */}
 
         <div className="absolute top-0 right-0 -mr-40 -mt-20 w-[600px] h-[600px] bg-[#10B981]/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute top-40 left-0 -ml-40 w-[500px] h-[500px] bg-[#10B981]/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -44,7 +44,7 @@ const Hero = () => {
       {/*--------------Video Dashboard----------*/}
       <div className="relative mx-auto w-full max-w-[1300px]">
         <div className="rounded-xl ring-1 ring-gray-900/5 shadow-2xl overflow-hidden bg-white ">
-          {/* -----------video---------- */}
+          {/* -----------Video---------- */}
           <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
             <div className="absolute top-0 left-0 right-0 h-10 border-b border-gray-200 bg-white flex items-center px-4 space-x-2 z-20">
               <div className="w-3 h-3 rounded-full bg-red-400"></div>

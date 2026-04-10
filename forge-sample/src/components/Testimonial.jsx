@@ -4,7 +4,7 @@ const Testimonial = () => {
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-6">
-        {/*------------header--------------*/}
+        {/*------------Header--------------*/}
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-gray-400">3</span>
           <span className="uppercase tracking-[0.14em] text-[#5cccb8]">
@@ -20,7 +20,7 @@ const Testimonial = () => {
         <div className="border border-gray-100 bg-white">
           {/* -----------Logos Row---------- */}
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-200 border-b border-gray-100">
-            {/*---------active tab---------- */}
+            {/*---------Active Tab---------- */}
             <div className="relative -mb-[1px] flex items-center justify-center py-8 cursor-pointer hover:grayscale-0 hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]">
               <img
                 src="../src/assets/images/transistor_active-D_BETxq_.svg"
@@ -28,7 +28,7 @@ const Testimonial = () => {
               />
             </div>
 
-            {/*--------inactive tab-------- */}
+            {/*--------Inactive Tab-------- */}
             <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
               <img
                 src="../src/assets/images/astalty_active-BKjeao8a.svg"
@@ -49,7 +49,7 @@ const Testimonial = () => {
             </div>
           </div>
 
-          {/*----------avatar image----------- */}
+          {/*----------Avatar Image----------- */}
           <div className="grid grid-cols-1 md:grid-cols-16 divide-y md:divide-y-0 md:divide-x divide-gray-100">
             <div className="md:col-span-4 flex items-center justify-center min-h-[460px] overflow-hidden bg-white py-18">
               <div className="relative w-full">

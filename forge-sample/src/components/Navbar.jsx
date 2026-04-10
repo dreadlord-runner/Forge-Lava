@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="w-full pb-15">
-      {/* ----------------announcement banner------------- */}
+      {/* ----------------Announcement Banner------------- */}
       <div className="bg-dark text-white flex text-center justify-center text-[15px] hover:bg-zinc-800 cursor-pointer h-[2.2rem] py-2 tracking-tight">
         <span className="group inline-flex items-center hover:text-gray-300 transition-colors">
           Stop managing your database. Let Forge handle backups, patching, and
@@ -14,7 +14,7 @@ const Navbar = () => {
         </span>
       </div>
 
-      {/*------------ Main Nav --------------*/}
+      {/*------------ Main Navbar --------------*/}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex items-center h-16">
           <div className="flex flex-1 items-center justify-start -ml-9">

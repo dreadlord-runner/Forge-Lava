@@ -4,7 +4,7 @@ import { Zap, Server } from "lucide-react";
 const LaravelVPS = () => {
   return (
     <section className="bg-[#151715] text-white">
-      {/*--------header--------- */}
+      {/*--------Header--------- */}
       <div className="max-w-7xl mx-auto px-6 border-t border-white/10 py-6">
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-[#4e564c]">4</span>
@@ -30,7 +30,7 @@ const LaravelVPS = () => {
         </div>
       </div>
 
-      {/*----------2x grid-------------- */}
+      {/*----------2x2 Grid-------------- */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-white/10 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
           {/*-------card 1-------- */}
@@ -43,7 +43,7 @@ const LaravelVPS = () => {
               ready to run out of the box.
             </p>
 
-            {/* ------mock container of card 1-------- */}
+            {/* ------Card 1-------- */}
             <div className="w-[80%] h-[50%] relative left-10 bottom-20 pt-4 pl-4 rounded-tl-2xl border-t border-l border-white/10 mt-auto overflow-hidden bg-[#1b1d1b]">
               <div className="p-6 -mt-2 -ml-2 border border-white/10 rounded-2xl bg-[#212321]">
                 <div className=" w-[110%] sm:w-full">
@@ -77,7 +77,7 @@ const LaravelVPS = () => {
                         <Server size={15} />
                       </div>
                       <div className="text-sm">
-                        <span className="text-white font-medium">Medium</span>
+                        <span className="text-gray-300">Medium</span>
                         <span className="text-[#10B981]/50 mx-2">·</span>
                         <span className="text-gray-400">2 vCPU</span>
                         <span className="text-[#10B981]/50 mx-2">·</span>
@@ -109,15 +109,17 @@ const LaravelVPS = () => {
               <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-b from-transparent to-[#151715] pointer-events-none"></div>
             </div>
           </div>
-          {/*------------- Card 2-----------------*/}
+          {/*-------------Card 2-----------------*/}
           <div className="pt-16 lg:pl-16 flex flex-col relative pb-20">
-            <h3 className="text-xl font-bold mb-3">Web terminal</h3>
-            <p className="text-gray-400 leading-relaxed mb-12 lg:pr-10">
+            <h3 className="text-xl text-[#e5e5e5] font-bold mb-3">
+              Web terminal
+            </h3>
+            <p className="text-[#9aa299] leading-relaxed mb-12 lg:pr-10">
               Real-time shared terminal sessions let your team collaborate
               directly and securely on Forge.
             </p>
 
-            {/*--------mock container of card 2-----------*/}
+            {/*--------Mock Container-----------*/}
             <div className="relative mt-auto">
               {/*------------ Fake Terminal Window----------- */}
               <div className="w-full max-w-md ml-auto rounded-xl border-t border-l border-white/10 bg-[#0a0a0a] overflow-hidden">
@@ -155,12 +157,10 @@ const LaravelVPS = () => {
                   <div className="absolute top-0 right-0 w-3 h-3 bg-[#10B981] border-2 border-[#18181b] rounded-full"></div>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-300 mb-3 leading-snug">
-                    <span className="text-white font-semibold">
-                      Kieran Brown
-                    </span>{" "}
-                    started a terminal session in{" "}
-                    <span className="text-white font-mono text-xs">
+                  <p className="text-xs text-[#9aa299] mb-3 leading-snug">
+                    <span className="text-[#e5e5e5]">Kieran Brown</span> started
+                    a terminal session in{" "}
+                    <span className="text-[#e5e5e5] font-mono text-xs">
                       dkr-app-02
                     </span>{" "}
                     server.
@@ -184,25 +184,31 @@ const LaravelVPS = () => {
       </div>
       {/* --- -----3-COLUMN ----- --- */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-row border-y border-l border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
+        <div className="flex border-y border-l border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
           <div className="w-[7%] border border-white/10"> </div>
           <div className="py-10 md:py-14 md:pr-12">
-            <h4 className="px-12 text-lg font-bold mb-3">No external setup</h4>
-            <p className="text-gray-400 leading-relaxed pl-12">
+            <h4 className="px-12 text-lg text-[#e5e5e5] font-bold mb-3">
+              No external setup
+            </h4>
+            <p className="text-[#9aa299] leading-relaxed pl-12">
               Provision and manage servers without leaving Forge.
             </p>
           </div>
 
           <div className="py-10 md:py-14 md:px-12">
-            <h4 className="text-lg font-bold mb-3">Centralized billing</h4>
-            <p className="text-gray-400 leading-relaxed">
+            <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
+              Centralized billing
+            </h4>
+            <p className="text-[#9aa299] leading-relaxed">
               Keep your infrastructure and payments in one place.
             </p>
           </div>
 
           <div className="py-10 md:py-14 md:pl-12">
-            <h4 className="text-lg font-bold mb-3">Stay ahead of issues</h4>
-            <p className="text-gray-400 leading-relaxed">
+            <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
+              Stay ahead of issues
+            </h4>
+            <p className="text-[#9aa299] leading-relaxed">
               Track CPU, memory, and usage on your dashboard as it happens.
             </p>
           </div>

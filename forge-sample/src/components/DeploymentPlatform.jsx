@@ -52,7 +52,7 @@ const DeploymentPlatform = () => {
           </p>
         </div>
 
-        {/* ---------2x2 grid----------- */}
+        {/* ---------2x2 Grid----------- */}
         <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 mt-12 rounded-tl-xl overflow-hidden">
           {/*--------Card 1------ */}
           <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
@@ -64,7 +64,7 @@ const DeploymentPlatform = () => {
               to your favorite cloud provider in minutes.
             </p>
 
-            {/* -----card 1 containers------- */}
+            {/* -----Card 1 Container------- */}
             <div className="relative pt-6 pl-6 rounded-tl-2xl mt-auto overflow-hidden">
               <div className="border rounded-xl p-2 border-gray-200 bg-[#fbfcfb]">
                 <div className="border rounded-xl p-4 border-gray-200 bg-white">
@@ -97,7 +97,7 @@ const DeploymentPlatform = () => {
             </div>
           </div>
 
-          {/*-----------card 2---------- */}
+          {/*-----------Card 2---------- */}
           <div className="p-10 md:p-10 border-r border-b border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
               A full server stack, ready in minutes{" "}
@@ -154,7 +154,7 @@ const DeploymentPlatform = () => {
             </div>
           </div>
 
-          {/* --------card 3--------- */}
+          {/* --------Card 3--------- */}
           <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
               Create any type of server{" "}
@@ -195,7 +195,7 @@ const DeploymentPlatform = () => {
             </div>
           </div>
 
-          {/* ---------card 4--------- */}
+          {/* ---------Card 4--------- */}
           <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
               Laravel-built, ready for anything

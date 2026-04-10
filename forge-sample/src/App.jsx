@@ -5,6 +5,7 @@ import DeploymentPlatform from "./components/DeploymentPlatform";
 import WhyForge from "./components/WhyForge";
 import Testimonial from "./components/Testimonial";
 import LaravelVPS from "./components/LaravelVPS";
+import FeaturesThatMatter from "./components/FeaturesThatMatter";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <WhyForge />
       <Testimonial />
       <LaravelVPS />
+      <FeaturesThatMatter />
     </div>
   );
 };
