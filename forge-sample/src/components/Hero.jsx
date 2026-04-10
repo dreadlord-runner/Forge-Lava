@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="max-w-5xl mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-[4.2rem] font-semibold tracking-tight text-dark">
+        <h1 className="text-4xl md:text-[4.2rem] font-semibold tracking-tight bg-gradient-to-b from-[#014a3a] to-[#000d0a] bg-clip-text text-transparent">
           The web is your frontier
         </h1>
 
