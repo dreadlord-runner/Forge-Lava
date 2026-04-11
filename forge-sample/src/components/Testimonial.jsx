@@ -7,7 +7,7 @@ const Testimonial = () => {
         {/*------------Header--------------*/}
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-gray-400">3</span>
-          <span className="uppercase tracking-[0.14em] text-[#5cccb8]">
+          <span className="uppercase tracking-[0.14em] text-headerGreen">
             Battle-Tested by the Best
           </span>
           <span className="text-gray-400">

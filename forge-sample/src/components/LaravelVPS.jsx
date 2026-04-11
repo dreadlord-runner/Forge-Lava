@@ -8,7 +8,7 @@ const LaravelVPS = () => {
       <div className="max-w-7xl mx-auto px-6 border-t border-white/10 py-6">
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-[#4e564c]">4</span>
-          <span className="text-[#5cccb8] uppercase tracking-wider">
+          <span className="text-headerGreen uppercase tracking-wider">
             Laravel VPS
           </span>
           <span className="text-[#4e564c] hidden sm:inline">
@@ -47,7 +47,7 @@ const LaravelVPS = () => {
             <div className="w-[80%] h-[50%] relative left-10 bottom-20 pt-4 pl-4 rounded-tl-2xl border-t border-l border-white/10 mt-auto overflow-hidden bg-[#1b1d1b]">
               <div className="p-6 -mt-2 -ml-2 border border-white/10 rounded-2xl bg-[#212321]">
                 <div className=" w-[110%] sm:w-full">
-                  <div className="flex items-center space-x-2 text-[#5cccb8] mb-6 pl-2">
+                  <div className="flex items-center space-x-2 text-headerGreen mb-6 pl-2">
                     <Zap size={16} fill="currentColor" />
                     <span className="font-semibold text-[#e5e5e5] text-sm">
                       Instant servers

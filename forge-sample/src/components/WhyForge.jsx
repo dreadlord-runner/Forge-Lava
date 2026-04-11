@@ -8,7 +8,7 @@ const WhyForge = () => {
         {/*-------------Header------------ */}
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-gray-400">2</span>
-          <span className="text-[#5cccb8] uppercase">Why Forge</span>
+          <span className="text-headerGreen uppercase">Why Forge</span>
           <span className="text-gray-400">
             Ryan Chandler • [CORE-2004] Integrate Cloudflare for on-forge.com
             domains

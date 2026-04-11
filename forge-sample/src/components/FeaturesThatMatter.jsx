@@ -7,7 +7,7 @@ const FeaturesThatMatter = () => {
       <div className="max-w-7xl mx-auto px-6 border-t border-gray-100 py-6">
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-gray-400">5</span>
-          <span className="text-headerGeen uppercase tracking-wider">
+          <span className="text-headerGreen uppercase tracking-wider">
             Features That Matter
           </span>
           <span className="text-gray-400 hidden sm:inline">
@@ -38,8 +38,47 @@ const FeaturesThatMatter = () => {
             <p className="text-gray-500 mb-12 text-lg leading-relaxed">
               Automate your deployments with scripts and ship updates instantly.
             </p>
-            {/* SVG Image Container with Fades */}
-            //////////////////////////////////////
+
+            {/*-----------Mock Deployment Script------------ */}
+            <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 mt-auto overflow-hidden bg-innerBorderGray w-[80%] h-[50%]">
+              <div className="bg-white border border-gray-200 shadow-sm rounded-xl p-5 pb-12 pr-12 w-[150%] sm:w-[120%]">
+                <h4 className="text-[15px] font-semibold text-gray-900 mb-1">
+                  Deployment Script
+                </h4>
+                <p className="text-sm text-gray-400 mb-5 whitespace-nowrap">
+                  The deploy commands that will be run to deploy your app
+                </p>
+
+                <div className="border-2 border-gray-200 rounded-lg flex overflow-hidden font-mono text-[13px] leading-relaxed bg-white">
+                  <div className="bg-[#f8f9fa] text-gray-400 py-3 flex flex-col items-end select-none">
+                    <span className="px-3">1</span>
+                    <span className="px-3">2</span>
+                    <span className="bg-[#ecefec] px-3">3</span>
+                    <span className="px-3">4</span>
+                    <span className="px-3">5</span>
+                  </div>
+
+                  <div className="py-3 w-full flex flex-col">
+                    <div className="px-4 text-gray-800">
+                      $CREATE_RELEASE<span className="text-purple-500">()</span>
+                    </div>
+                    <div className="px-4 h-[21px]"></div>
+                    <div className="px-4 bg-[#f4f5f7] whitespace-nowrap">
+                      <span className="text-purple-500">npm</span> ci{" "}
+                      <span className="text-purple-500"> && npm </span> run
+                      build
+                    </div>
+                    <div className="px-4 text-gray-400 py-0.5">
+                      $ACTIVATE_RELEASE
+                      <span className="text-purple-400">()</span>
+                    </div>
+                    <div className="px-4 h-[20px]"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+            </div>
           </div>
 
           {/* -----------------Card 2------------ */}
