@@ -1,4 +1,5 @@
 import React from "react";
+import { LockKeyhole } from "lucide-react";
 
 const FeaturesThatMatter = () => {
   return (
@@ -41,7 +42,7 @@ const FeaturesThatMatter = () => {
 
             {/*-----------Mock Deployment Script------------ */}
             <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 mt-auto overflow-hidden bg-innerBorderGray w-[80%] h-[50%]">
-              <div className="bg-white border border-gray-200 shadow-sm rounded-xl p-5 pb-12 pr-12 w-[150%] sm:w-[120%]">
+              <div className="bg-white border border-gray-200 shadow-sm rounded-xl p-5 pb-12 pr-12">
                 <h4 className="text-[15px] font-semibold text-gray-900 mb-1">
                   Deployment Script
                 </h4>
@@ -89,8 +90,51 @@ const FeaturesThatMatter = () => {
             <p className="text-gray-500 mb-12 text-lg leading-relaxed">
               Secure your sites from the get-go with free, automated SSL.
             </p>
-            {/* SVG Image Container with Fades */}
-            /////////////////////////////////////
+            {/*------Mock Encrypt--------- */}
+            <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 mt-auto overflow-hidden bg-innerBorderGray w-[80%] h-[50%]">
+              <div className="bg-white border border-gray-200 shadow-sm rounded-xl pl-6 pt-6">
+                <div className="flex items-center space-x-3 mb-5">
+                  <div className="w-8 h-8 bg-white border border-gray-200 rounded shadow-sm flex items-center justify-center relative flex-shrink-0">
+                    <LockKeyhole size={15} />
+                  </div>
+
+                  <h4 className="text-[15px] font-bold text-gray-900">
+                    Let's Encrypt
+                  </h4>
+                </div>
+                <div className="mb-2">
+                  <label className="text-sm font-medium text-gray-500">
+                    Public key algorithm
+                  </label>
+                </div>
+                <div className="border border-gray-200 rounded-xl overflow-hidden flex flex-col bg-white">
+                  <div className="flex items-center p-4 border-b border-gray-200">
+                    <div className="w-4 h-4 rounded-full border-[4px] border-[#10B981] flex-shrink-0"></div>
+
+                    <div className="ml-4 flex flex-wrap items-center gap-x-3">
+                      <span className=" text-gray-500">ECDSA</span>
+                      <span className="text-gray-400 text-[14px]">
+                        secp384r1
+                      </span>
+                    </div>
+                    <div className="m-auto">
+                      <span className="text-[14px] tracking-wide text-headerGreen bg-[#10B981]/5 px-2 rounded-md border border-[#10B981]/20">
+                        Recommended
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center p-4">
+                    <div className="w-4 h-4 rounded-full border border-gray-300 flex-shrink-0"></div>
+                    <div className="ml-4 flex items-center space-x-3">
+                      <span className="text-gray-500">RSA</span>
+                      <span className="text-gray-400 text-[14px]">Legacy</span>
+                    </div>
+                  </div>
+                  <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
+                  <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* -------------------Card 3------------ */}
