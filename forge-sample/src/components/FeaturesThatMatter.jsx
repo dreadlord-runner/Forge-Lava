@@ -1,5 +1,5 @@
 import React from "react";
-import { LockKeyhole } from "lucide-react";
+import { LockKeyhole, SquareCheck, Square, Globe } from "lucide-react";
 
 const FeaturesThatMatter = () => {
   return (
@@ -146,8 +146,74 @@ const FeaturesThatMatter = () => {
               Provision, back up, and monitor database clusters without leaving
               Forge.
             </p>
-            {/* SVG Image Container with Fades */}
-            /////////////////////////////////
+            {/*----------Mock Database--------------- */}
+            <div className="relative overflow-hidden h-[60%]">
+              <div className="absolute top-16 left-6 w-72 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl pl-2 z-0">
+                <h4 className="text-[15px] font-bold text-gray-900 p-2">
+                  Database Details
+                </h4>
+                <div className="border-t border-l border-gray-200 p-3 rounded-2xl bg-white">
+                  <div>
+                    <h5 className="text-[14px] font-medium text-gray-900 mb-1">
+                      Database connection URL
+                    </h5>
+                    <p className="text-[14px] text-gray-400 mb-3 truncate">
+                      Use the database connection string below to connect to
+                      your connection
+                    </p>
+                    <div className="border border-gray-200 rounded-lg p-3 bg-innerBorderGray">
+                      <code className="text-[11px] text-gray-400 font-mono tracking-tight">
+                        mysql+ssh://forge@165.232.119.159/forge@127.0.
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*---------Foreground Mock Database------- */}
+
+              <div className="absolute top-0 left-44 w-80 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl p-2">
+                <div className="p-6 z-10 border-l border-t border-gray-200 rounded-xl bg-white">
+                  <h4 className="text-[15px] font-bold text-gray-900 mb-6 whitespace-nowrap overflow-hidden relative">
+                    New backup configuration
+                  </h4>
+                  <div className="mb-5">
+                    <label className="text-[13px] text-gray-500 font-medium block mb-2">
+                      Frequency
+                    </label>
+                    <div className="border border-gray-200 rounded-lg px-3 py-2 text-[14px] text-gray-900 bg-white">
+                      Daily
+                    </div>
+                  </div>
+                  <label className="text-[14px] text-gray-500 font-medium block mb-2">
+                    Databases
+                  </label>
+                  <div className="border border-gray-100 rounded-xl p-1 shadow-sm bg-white">
+                    <div className="flex items-center space-x-3 p-2">
+                      <div className="w-5 h-5 rounded flex items-center justify-center flex-shrink-0 ">
+                        <SquareCheck
+                          size={24}
+                          className="text-white fill-[#14ba9c]"
+                        />
+                      </div>
+                      <span className="text-[13px] text-gray-400 font-medium">
+                        my_database
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3 p-2">
+                      <div className="w-5 h-5 rounded flex items-center justify-center flex-shrink-0">
+                        <Square size={18} />
+                      </div>
+                      <span className="text-[14px] text-gray-400 font-medium">
+                        forge
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 w-82 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
+              <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
+            </div>
           </div>
 
           {/* ------------------Card 4-----------------*/}
@@ -159,8 +225,49 @@ const FeaturesThatMatter = () => {
               Skip domain setup and launch your app instantly on a on-forge.com
               domain.
             </p>
-            {/* SVG Image Container with Fades */}
-            //////////////////////////////
+            {/*--------Forge Domain--------- */}
+
+            <div className="relative overflow-hidden h-[60%]">
+              <div className="border border-gray-200 shadow-sm rounded-xl p-2 bg-innerBorderGray">
+                <div className="p-6 pb-12 pr-12 border-t border-l border-gray-200 rounded-xl bg-white">
+                  <div className="mb-8">
+                    <h4 className="text-[15px] font-bold text-gray-900 mb-1">
+                      Forge domain
+                    </h4>
+                    <p className="text-[13px] text-gray-500 mb-4">
+                      Every site includes on-forge.com domain.
+                    </p>
+
+                    <div className="flex items-center border border-gray-200 rounded-lg p-2.5 px-3 bg-white shadow-sm w-full max-w-[280px]">
+                      <Globe size={18} className="text-gray-400" />
+
+                      <div className="ml-3 font-mono text-[13px] flex-1 truncate">
+                        <span className="font-semibold text-gray-900 tracking-tight">
+                          balmy-rain
+                        </span>
+                        <span className="text-gray-400 tracking-tight">
+                          .on-forge.com
+                        </span>
+                      </div>
+
+                      <LockKeyhole size={18} className="text-headerGreen" />
+                    </div>
+                  </div>
+
+                  <div className="opacity-40">
+                    <h4 className="text-[15px] font-bold text-gray-600 mb-1">
+                      Custom domains
+                    </h4>
+                    <p className="text-[13px] text-gray-400">
+                      Add domain and aliases that you own.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none z-10"></div>
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none z-10"></div>
+            </div>
           </div>
         </div>
 
