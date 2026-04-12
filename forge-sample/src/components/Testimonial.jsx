@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section className="bg-white">
+    <section>
       <div className="max-w-7xl mx-auto px-6 py-6">
         {/*------------Header--------------*/}
         <div className="flex items-center space-x-3 font-mono text-xs">

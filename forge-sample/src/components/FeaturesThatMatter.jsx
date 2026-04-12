@@ -3,7 +3,7 @@ import { LockKeyhole, SquareCheck, Square, Globe } from "lucide-react";
 
 const FeaturesThatMatter = () => {
   return (
-    <section className="bg-white pt-10 pb-24">
+    <section className="pt-10 pb-24">
       {/* -----Header----- --- */}
       <div className="max-w-7xl mx-auto px-6 border-t border-gray-100 py-6">
         <div className="flex items-center space-x-3 font-mono text-xs">
@@ -238,19 +238,20 @@ const FeaturesThatMatter = () => {
                       Every site includes on-forge.com domain.
                     </p>
 
-                    <div className="flex items-center border border-gray-200 rounded-lg p-2.5 px-3 bg-white shadow-sm w-full max-w-[280px]">
+                    <div className="flex items-center border border-gray-200 rounded-lg p-3.5 px-3 bg-white w-full">
                       <Globe size={18} className="text-gray-400" />
 
-                      <div className="ml-3 font-mono text-[13px] flex-1 truncate">
+                      <div className="ml-3 font-mono text-[13px] flex">
                         <span className="font-semibold text-gray-900 tracking-tight">
                           balmy-rain
                         </span>
                         <span className="text-gray-400 tracking-tight">
                           .on-forge.com
                         </span>
+                        <span className="ml-4">
+                          <LockKeyhole size={18} className="text-headerGreen" />
+                        </span>
                       </div>
-
-                      <LockKeyhole size={18} className="text-headerGreen" />
                     </div>
                   </div>
 

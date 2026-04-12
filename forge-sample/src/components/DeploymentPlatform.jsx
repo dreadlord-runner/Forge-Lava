@@ -29,7 +29,7 @@ const DeploymentPlatform = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/*--------Header------- */}
         <div className="mb-16 max-w-3xl">

@@ -5,7 +5,7 @@ import bannerVideo from "../assets/images/banner.mp4";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         {/* ------ Backhground Glow Effect ------- */}
 
