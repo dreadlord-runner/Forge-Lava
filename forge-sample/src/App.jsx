@@ -7,6 +7,7 @@ import Testimonial from "./components/Testimonial";
 import LaravelVPS from "./components/LaravelVPS";
 import FeaturesThatMatter from "./components/FeaturesThatMatter";
 import BuildForDevelopers from "./components/BuildForDevelopers";
+import GlobeStats from "./components/GlobeStats";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <LaravelVPS />
       <FeaturesThatMatter />
       <BuildForDevelopers />
+      <GlobeStats />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { tweetPosts } from "../../../data/tweetPosts";
+import { tweetPosts } from "../../data/tweetPosts";
 
 const columns = Array.from({ length: 5 }, (_, columnIndex) =>
   tweetPosts.slice(columnIndex * 5, columnIndex * 5 + 5),

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" className="w-full h-full">
+  <circle cx="200" cy="200" r="195" fill="#0f172a" />
+
+  <g stroke="#1e293b" stroke-width="2" fill="none">
+    <circle cx="200" cy="200" r="195" stroke="#334155" />
+
+    <ellipse cx="200" cy="200" rx="65" ry="195" />
+    <ellipse cx="200" cy="200" rx="130" ry="195" />
+    <line x1="200" y1="5" x2="200" y2="395" />
+
+    <ellipse cx="200" cy="200" rx="195" ry="65" />
+    <ellipse cx="200" cy="200" rx="195" ry="130" />
+    <line x1="5" y1="200" x2="395" y2="200" />
+  </g>
+
+  <g fill="#94a3b8">
+    <circle cx="200" cy="200" r="3" fill="#e2e8f0" />
+    
+    <circle cx="200" cy="70" r="2" />
+    <circle cx="200" cy="330" r="2" />
+    <circle cx="70" cy="200" r="2" />
+    <circle cx="330" cy="200" r="2" />
+    
+    <circle cx="138" cy="138" r="1.5" />
+    <circle cx="262" cy="138" r="1.5" />
+    <circle cx="138" cy="262" r="1.5" />
+    <circle cx="262" cy="262" r="1.5" />
+  </g>
+
+  <path d="M 40 100 A 195 195 0 0 1 100 40" stroke="#cbd5e1" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round" />
+</svg>
