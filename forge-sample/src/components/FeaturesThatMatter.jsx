@@ -225,6 +225,7 @@ const FeaturesThatMatter = () => {
               Skip domain setup and launch your app instantly on a on-forge.com
               domain.
             </p>
+
             {/*--------Forge Domain--------- */}
 
             <div className="relative overflow-hidden h-[60%]">
@@ -273,7 +274,6 @@ const FeaturesThatMatter = () => {
         </div>
 
         {/* ----------Bottom Grid----------*/}
-        {/* We use border-l here to continue the outer left edge seamlessly from the grid above */}
         <div className="grid grid-cols-1 md:grid-cols-3 border-l border-gray-100 bg-white">
           <div className="p-10 md:py-16 md:px-14 border-b border-r border-gray-100">
             <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
