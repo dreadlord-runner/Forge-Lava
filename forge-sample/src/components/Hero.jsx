@@ -42,7 +42,7 @@ const Hero = () => {
       </div>
 
       {/*--------------Video Dashboard----------*/}
-      <div className="relative mx-auto w-full max-w-[1300px]">
+      <div className="relative mx-auto w-full max-w-[1300px] h-[400px]">
         <div className="rounded-xl ring-1 ring-gray-900/5 shadow-2xl overflow-hidden bg-white ">
           {/* -----------Video---------- */}
           <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
@@ -72,6 +72,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="absolute inset-x-0 bottom-0 h-45 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
 
       {/* ----------Partners---------- */}
       <div className="w-full max-w-7xl mt-10 mx-auto px-6 border-t border-b border-gray-200 p-10">

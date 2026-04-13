@@ -9,7 +9,7 @@ import { BiCopy } from "react-icons/bi";
 
 const Monitoring = () => {
   return (
-    <section className="pb-24">
+    <section className="pb-12">
       {/* -----Header----- --- */}
       <div className="max-w-7xl mx-auto p-5 border-t border-gray-100">
         <div className="flex items-center space-x-3 font-mono text-xs">
@@ -179,17 +179,74 @@ const Monitoring = () => {
               Monitor CPU, disk, and load at a glance with enhanced charts. Get
               instant alerts when things change.
             </p>
-            {/*----------Mock Database--------------- */}
-            <div className="relative overflow-hidden h-[60%]">
-              {/* hhhhhhhhheeeeeeeeerrrrrrrreeeeeeeeeee */}
 
-              {/*---------Foreground Mock Database------- */}
+            {/* -------------  Mockup 3 ------------ */}
+            <div className="relative mt-auto overflow-hidde min-h-[300px]">
+              <div className="absolute top-15 left-6 w-[280px] md:w-[320px] bg-innerBorderGray border border-gray-200 rounded-xl p-2 z-0">
+                <h4 className="text-[15px] font-medium text-gray-900 mb-6">
+                  Memory
+                </h4>
 
-              <div className="absolute top-0 left-44 w-80 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl p-2">
-                {/***hhhhhhhhhhhheeeeeeeerrrrrrreeeeeee */}
+                <div className="relative h-32 flex">
+                  <div className="flex flex-col justify-between text-[12px] text-gray-300 font-mono pr-4">
+                    <span>100%</span>
+                    <span>80%</span>
+                    <span>60%</span>
+                    <span>40%</span>
+                  </div>
+
+                  <div className="relative flex-1 mt-2">
+                    <div className="absolute top-0 w-full border-t border-gray-200"></div>
+                    <div className="absolute top-[33.33%] w-full border-t border-gray-200"></div>
+                    <div className="absolute top-[66.66%] w-full border-t border-gray-200"></div>
+                    <div className="absolute bottom-0 w-full border-t border-gray-200"></div>
+
+                    <svg
+                      className="absolute inset-0 w-full h-full -ml-1"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 100 100"
+                    >
+                      <path
+                        d="M0 70 L2 75 L4 76 L6 85 L8 76 L10 75 L12 73 L15 75 L18 85 L20 70 L23 75 L26 60 L28 65 L30 55 L32 60 L35 55 L38 65 L40 60 L42 70 L45 75 L48 65 L50 60 L52 65 L55 50 L58 30 L60 35 L62 25 L65 45 L68 25 L70 30 L72 35 L75 30 L78 25 L80 35 L82 30 L85 25 L88 35 L90 40 L92 35 L95 45 L98 40 L100 50"
+                        fill="none"
+                        stroke="#FBBF24"
+                        strokeWidth="1.5"
+                        strokeLinejoin="round"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div className="absolute inset-y-0 right-0 w-82 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
-              <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
+
+              <div className="absolute left-44 md:left-56 w-[270px] bg-innerBorderGray border-t border-l border-gray-200 rounded-xl p-2">
+                <div className="border-t border-l border-gray-200 rounded-xl p-6 bg-white">
+                  <h4 className="text-[15px] font-medium text-gray-900 mb-5">
+                    New server monitor
+                  </h4>
+
+                  <div className="mb-5">
+                    <label className="text-[14px] text-gray-500 font-medium block mb-2">
+                      Metric
+                    </label>
+                    <div className="border border-gray-200 rounded-lg px-3 py-1.5 text-[15px] text-gray-600 bg-white border-r-0">
+                      CPU Load Average
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="text-[14px] text-gray-500 font-medium block mb-2">
+                      Condition
+                    </label>
+
+                    <div className="border border-gray-200 rounded-lg px-3 py-1.5 text-[15px] text-gray-600 bg-white border-r-0">
+                      Greater than or equal to
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
+              <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
             </div>
           </div>
 
@@ -202,13 +259,53 @@ const Monitoring = () => {
               Take the guesswork out of your server maintenance with detailed
               records of system activities and events.
             </p>
-            {/*--------Forge Domain--------- */}
 
-            <div className="relative overflow-hidden h-[60%]">
-              {/**hhhhhhhhhhheeeeeerrrrrrrreeeeeeee */}
+            {/* --------------Mockup 4 ----------- */}
+            <div className="relative mt-auto overflow-hidden bg-innerBorderGray min-h-[300px]">
+              <div className="border border-gray-200 rounded-xl p-3 pb-12 pr-12 w-[150%] sm:w-[130%] font-mono text-[13px] leading-relaxed">
+                <div className="flex px-3 py-1.5 items-center">
+                  <span className="text-gray-400 w-24 shrink-0">10:41:02</span>
+                  <span className="text-gray-600 truncate">
+                    App\Jobs\UploadFile ................RUNNING
+                  </span>
+                </div>
 
-              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none z-10"></div>
-              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none z-10"></div>
+                <div className="flex px-3 py-1.5 items-center">
+                  <span className="text-gray-400 w-24 shrink-0">10:39:31</span>
+                  <span className="text-gray-600 truncate">
+                    App\Jobs\UploadFile..............26.5ms DONE
+                  </span>
+                </div>
+
+                <div className="flex px-3 py-2 items-center bg-[#f8f9fa] rounded-md my-0.5 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.02)]">
+                  <span className="text-gray-400 w-24 shrink-0">10:27:19</span>
+                  <span className="text-gray-600 truncate">
+                    Running [App\Jobs\CreatePost]..... 13.5ms DONE
+                  </span>
+                </div>
+
+                <div className="flex px-3 py-1.5 items-center">
+                  <span className="text-gray-400 w-24 shrink-0">10:24:41</span>
+                  <span className="text-gray-600 truncate">
+                    Running [App\Jobs\UploadFile]......2.2ms DONE
+                  </span>
+                </div>
+
+                <div className="flex px-3 py-1.5 items-center">
+                  <span className="text-gray-400 w-24 shrink-0">10:19:17</span>
+                  <span className="text-gray-600 truncate">
+                    App\Jobs\CreatePost..............86.4ms DONE
+                  </span>
+                </div>
+
+                <div className="flex px-3 py-2 items-center bg-[#fff5f5] text-[#fca5a5] rounded-md mt-0.5">
+                  <span className="w-24 shrink-0">10:18:53</span>
+                  <span className="truncate">Something went wrong</span>
+                </div>
+              </div>
+
+              <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
+              <div className="absolute inset-x-0 bottom-0 h-38 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
             </div>
           </div>
         </div>
