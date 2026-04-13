@@ -9,6 +9,7 @@ import FeaturesThatMatter from "./components/FeaturesThatMatter";
 import BuildForDevelopers from "./components/BuildForDevelopers";
 import GlobeStats from "./components/GlobeStats";
 import Monitoring from "./components/Monitoring";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <BuildForDevelopers />
       <GlobeStats />
       <Monitoring />
+      <Footer />
     </div>
   );
 };
