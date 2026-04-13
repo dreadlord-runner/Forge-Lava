@@ -2,9 +2,9 @@ import React from "react";
 
 const GlobeStats = () => {
   return (
-    <section className="bg-[#151715] text-white pb-32">
+    <section className="bg-[#151715] text-white pb-24">
       {/*----------Header--------- */}
-      <div className="max-w-7xl mx-auto px-6 py-6 border-t border-white/10">
+      <div className="max-w-7xl mx-auto p-5 border-t border-white/10">
         <div className="flex items-center space-x-3 text-xs font-mono">
           <span className="text-[#4e564c]">7</span>
           <span className="text-headerGreen uppercase tracking-wider">
@@ -57,14 +57,15 @@ const GlobeStats = () => {
               </div>
             </div>
           </div>
+          {/*----------Globe Image---------- */}
           <div className="relative flex justify-center lg:justify-end">
-            <img
-              src="../src/assets/images/globe.svg"
-              alt="Global Infrastructure"
-              className="w-full max-w-[600px] h-auto object-contain opacity-60 lg:scale-125 lg:translate-x-10"
-            />
-
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+            <div className="globe-fade w-full max-w-[500px] lg:scale-120 lg:translate-x-20">
+              <img
+                src="../src/assets/images/globe.svg"
+                alt="Global Infrastructure"
+                className="w-full h-auto object-contain opacity-60"
+              />
+            </div>
           </div>
         </div>
       </div>

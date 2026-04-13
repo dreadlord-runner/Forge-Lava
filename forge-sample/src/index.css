@@ -39,3 +39,37 @@ body {
 .animate-flash {
   animation: cursor-blink 1s steps(1, end) infinite;
 }
+
+.globe-fade {
+  position: relative;
+}
+
+.globe-fade::before,
+.globe-fade::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.globe-fade::before {
+  inset: 0 0 0 auto;
+  width: 54%;
+  background: linear-gradient(
+    to left,
+    #151715 0%,
+    rgba(21, 23, 21, 0.82) 28%,
+    rgba(21, 23, 21, 0) 100%
+  );
+}
+
+.globe-fade::after {
+  inset: auto 0 0 0;
+  height: 54%;
+  background: linear-gradient(
+    to top,
+    #151715 0%,
+    rgba(21, 23, 21, 0.82) 28%,
+    rgba(21, 23, 21, 0) 100%
+  );
+}
