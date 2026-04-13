@@ -11,7 +11,7 @@ const Monitoring = () => {
   return (
     <section className="pb-12">
       {/* -----Header----- --- */}
-      <div className="max-w-7xl mx-auto p-5 border-t border-gray-100">
+      <div className="max-w-7xl mx-auto p-5 border-t border-gray-200">
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-gray-400">8</span>
           <span className="text-headerGreen uppercase tracking-wider">
@@ -39,7 +39,7 @@ const Monitoring = () => {
         </div>
 
         {/* --------------2x2 Grid---------- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 rounded-tl-xl overflow-hidden bg-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-200  overflow-hidden bg-white">
           {/* ----------------Card 1--------------- */}
           <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -306,6 +306,39 @@ const Monitoring = () => {
 
               <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
               <div className="absolute inset-x-0 bottom-0 h-38 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-[60px] border border-gray-200"></div>
+
+        {/*-----------Bottom Section------------- */}
+        <div className="relative py-24 md:py-32 overflow-hidden bg-animate-gradient">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <div className="wave-element wave-1"></div>
+            <div className="wave-element wave-2"></div>
+            <div className="wave-element wave-3"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl ml-15 px-6 flex flex-col md:flex-row items-center">
+            <div className="max-w-xl">
+              <h2 className="text-2xl md:text-3xl text-white tracking-tight leading-tight drop-shadow-md">
+                Take server management <br className="hidden md:block" /> to the
+                next level
+              </h2>
+              <p className="text-xl text-gray-200 mb-5 drop-shadow">
+                Your apps, your servers, none of the DevOps complexity.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button className="w-full sm:w-auto border border-[#111827] bg-[#111827] text-white px-5 py-2.5 rounded-lg hover:bg-black transition-colors shadow-lg text-sm tracking-wide">
+                  Deploy server
+                </button>
+
+                <button className="w-full sm:w-auto bg-white border border-gray-200 text-gray-900 px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-sm tracking-wide">
+                  Read the docs
+                </button>
+              </div>
             </div>
           </div>
         </div>
