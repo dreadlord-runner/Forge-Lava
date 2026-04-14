@@ -19,6 +19,8 @@
 
   --shadow-forge:
     0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+  --animate-marquee-vertical: marquee-vertical 20s linear infinite;
 }
 
 body {
@@ -144,5 +146,14 @@ body {
   }
   100% {
     transform: translateX(1px);
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
   }
 }
