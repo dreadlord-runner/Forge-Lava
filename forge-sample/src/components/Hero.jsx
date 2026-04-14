@@ -42,8 +42,8 @@ const Hero = () => {
       </div>
 
       {/*--------------Video Dashboard----------*/}
-      <div className="relative mx-auto w-full max-w-[1300px] h-[500px] overflow-hidden">
-        <div className="rounded-xl ring-1 ring-gray-900/5 shadow-2xl overflow-hidden bg-white ">
+      <div className="relative mx-auto w-full max-w-[1300px] h-[500px] overflow-hidden px-4 md:px-6">
+        <div className="rounded-xl border border-gray-200/80 overflow-hidden bg-white">
           {/* -----------Video---------- */}
           <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
             <div className="absolute top-0 left-0 right-0 h-10 border-b border-gray-200 bg-white flex items-center px-4 space-x-2 z-20">
@@ -75,22 +75,34 @@ const Hero = () => {
       </div>
 
       {/* ----------Partners---------- */}
-      <div className="w-full mt-20 mx-auto px-6 border-t border-gray-200 p-10">
-        <div className="flex flex-1 justify-center items-center gap-10">
-          <p className=" text-sm">
-            <span className="text-gray">Trusted by</span>{" "}
-            <span>
-              {" "}
-              1000+ <br /> companies{" "}
-            </span>
-          </p>
-
-          <img src="../src/assets/images/openai.svg" alt="OpenAI" />
-          <img src="../src/assets/images/tailwindcss.svg" alt="TailwindCSS" />
-          <img src="../src/assets/images/webex.svg" alt="Webex" />
-          <img src="../src/assets/images/siemens.svg" alt="Siemens" />
-          <img src="../src/assets/images/fandom.svg" alt="Fandom" />
-          <img src="../src/assets/images/red-hat.svg" alt="RedHat" />
+      <div className="w-full mt-24 border-y border-gray-100 bg-white">
+        <div className="max-w-7xl mx-auto border-x border-dotted border-gray-200">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 divide-y md:divide-y-0 md:divide-x divide-dotted divide-gray-200 items-stretch">
+            <div className="flex items-center justify-center py-8 px-4">
+              <p className="text-[13px] text-gray-500 leading-snug">
+                Trusted by <span className="text-gray-900 font-medium">1000+ <br /> companies</span>
+              </p>
+            </div>
+            
+            <div className="flex items-center justify-center py-8 px-4">
+              <img src="../src/assets/images/openai.svg" alt="OpenAI" className="h-6 opacity-70 grayscale" />
+            </div>
+            <div className="flex items-center justify-center py-8 px-4">
+              <img src="../src/assets/images/tailwindcss.svg" alt="TailwindCSS" className="h-5 opacity-70 grayscale" />
+            </div>
+            <div className="flex items-center justify-center py-8 px-4">
+              <img src="../src/assets/images/webex.svg" alt="Webex" className="h-5 opacity-70 grayscale" />
+            </div>
+            <div className="flex items-center justify-center py-8 px-4">
+              <img src="../src/assets/images/siemens.svg" alt="Siemens" className="h-6 opacity-70 grayscale" />
+            </div>
+            <div className="flex items-center justify-center py-8 px-4">
+              <img src="../src/assets/images/fandom.svg" alt="Fandom" className="h-5 opacity-70 grayscale" />
+            </div>
+            <div className="flex items-center justify-center py-8 px-4">
+              <img src="../src/assets/images/red-hat.svg" alt="RedHat" className="h-6 opacity-70 grayscale" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
