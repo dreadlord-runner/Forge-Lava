@@ -29,10 +29,10 @@ const DeploymentPlatform = () => {
   ];
 
   return (
-    <section className="py-24">
+    <section className="border border-gray-200">
       <div className="max-w-7xl mx-auto px-6">
         {/*--------Header------- */}
-        <div className="mb-16 max-w-3xl">
+        <div className="mb-16 max-w-3xl py-4">
           <div className="flex items-center space-x-3 font-mono text-xs mb-18">
             <span className="text-gray-400">1</span>
             <span className="text-headerGreen uppercase">
@@ -53,7 +53,7 @@ const DeploymentPlatform = () => {
         </div>
 
         {/* ---------2x2 Grid----------- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 mt-12 rounded-tl-xl overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 mt-12 overflow-hidden">
           {/*--------Card 1------ */}
           <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
             <h3 className="text-lg font-medium text-gray-900 mb-3">
@@ -252,6 +252,7 @@ const DeploymentPlatform = () => {
             </div>
           </div>
         </div>
+        <div className="h-15 border-l border-r border-gray-100"></div>
       </div>
     </section>
   );

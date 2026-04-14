@@ -12,11 +12,23 @@ const Footer = () => {
               Next-generation server management platfrm built for developers who
               want speed, control, and ease of use.
             </p>
-            <div className="flex space-x-6 text-footerText">
-              <BsGithub size={30} />
-              <BsTwitterX size={30} />
-              <BsYoutube size={30} />
-              <BsDiscord size={30} />
+            <div className="flex space-x-6 text-footerText ">
+              <BsGithub
+                size={30}
+                className="hover:text-gray-400 cursor-pointer"
+              />
+              <BsTwitterX
+                size={30}
+                className="hover:text-gray-400 cursor-pointer"
+              />
+              <BsYoutube
+                size={30}
+                className="hover:text-gray-400 cursor-pointer"
+              />
+              <BsDiscord
+                size={30}
+                className="hover:text-gray-400 cursor-pointer"
+              />
             </div>
             <div className="mt-8">
               <p className="text-sm text-footerText">

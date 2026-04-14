@@ -9,7 +9,7 @@ import { BiCopy } from "react-icons/bi";
 
 const Monitoring = () => {
   return (
-    <section className="pb-12">
+    <section>
       {/* -----Header----- --- */}
       <div className="max-w-7xl mx-auto p-5 border-t border-gray-200">
         <div className="flex items-center space-x-3 font-mono text-xs">
@@ -331,11 +331,11 @@ const Monitoring = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <button className="w-full sm:w-auto border border-[#111827] bg-[#111827] text-white px-5 py-2.5 rounded-lg hover:bg-black transition-colors shadow-lg text-sm tracking-wide">
+                <button className="w-full sm:w-auto border border-dark bg-dark text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors shadow-lg text-sm tracking-wide cursor-pointer">
                   Deploy server
                 </button>
 
-                <button className="w-full sm:w-auto bg-white border border-gray-200 text-gray-900 px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-sm tracking-wide">
+                <button className="w-full sm:w-auto bg-white border border-gray-200 text-gray-900 px-5 py-2.5 rounded-lg hover:bg-gray-100 transition-colors shadow-lg text-sm tracking-wide cursor-pointer">
                   Read the docs
                 </button>
               </div>

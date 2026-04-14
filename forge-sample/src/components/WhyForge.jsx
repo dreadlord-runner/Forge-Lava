@@ -4,7 +4,7 @@ import { LockKeyhole, Server, Zap } from "lucide-react";
 const WhyForge = () => {
   return (
     <section className="max-w-7xl mx-auto">
-      <div className="max-w-7xl mx-auto px-6 border-t border-gray-100 py-6">
+      <div className="max-w-7xl mx-auto px-6 py-6">
         {/*-------------Header------------ */}
         <div className="flex items-center space-x-3 font-mono text-xs">
           <span className="text-gray-400">2</span>

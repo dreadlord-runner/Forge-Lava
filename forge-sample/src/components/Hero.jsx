@@ -31,18 +31,18 @@ const Hero = () => {
         </p>
 
         <div className="mt-12 flex justify-center gap-3 mb-30">
-          <button className="px-5 py-[8.9px] border border-dark bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
+          <button className="px-5 py-[8.9px] border border-dark bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition cursor-pointer">
             Deploy server
           </button>
 
-          <button className="px-5 py-[8.9px] border border-gray-200 rounded-lg text-sm hover:bg-gray-100 transition shadow-forge">
+          <button className="px-5 py-[8.9px] border border-gray-200 rounded-lg text-sm hover:bg-gray-100 transition shadow-forge cursor-pointer">
             Read Docs
           </button>
         </div>
       </div>
 
       {/*--------------Video Dashboard----------*/}
-      <div className="relative mx-auto w-full max-w-[1300px] h-[400px]">
+      <div className="relative mx-auto w-full max-w-[1300px] h-[500px] overflow-hidden">
         <div className="rounded-xl ring-1 ring-gray-900/5 shadow-2xl overflow-hidden bg-white ">
           {/* -----------Video---------- */}
           <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
@@ -71,11 +71,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
       </div>
-      <div className="absolute inset-x-0 bottom-0 h-45 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
 
       {/* ----------Partners---------- */}
-      <div className="w-full max-w-7xl mt-10 mx-auto px-6 border-t border-b border-gray-200 p-10">
+      <div className="w-full mt-20 mx-auto px-6 border-t border-gray-200 p-10">
         <div className="flex flex-1 justify-center items-center gap-10 md:gap-20">
           <p className=" text-sm">
             <span className="text-gray">Trusted by</span>{" "}
@@ -84,6 +84,7 @@ const Hero = () => {
               1000+ <br /> companies{" "}
             </span>
           </p>
+
           <span className="text-xl font-bold">OpenAI</span>
           <span className="text-xl font-bold">TailwindCSS</span>
           <span className="text-xl font-bold">webex</span>

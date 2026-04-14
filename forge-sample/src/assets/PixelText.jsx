@@ -33,11 +33,7 @@ export default function PixelText() {
       );
 
       ctx.font = `bold ${targetFontSize}px Arial`;
-      const measuredWidth = ctx.measureText(text).width;
-      const fontSize =
-        measuredWidth > canvasWidth * 0.95
-          ? targetFontSize * ((canvasWidth * 0.95) / measuredWidth)
-          : targetFontSize;
+      const fontSize = rootFontSize * 22; // fixed size
 
       ctx.font = `bold ${fontSize}px Arial`;
       const textMetrics = ctx.measureText(text);
