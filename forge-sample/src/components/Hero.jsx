@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
       {/*--------------Video Dashboard----------*/}
-      <div className="relative mx-auto w-full max-w-[1400px] h-[500px] overflow-hidden px-4 md:px-6">
+      <div className="relative mx-auto w-full max-w-[1400px] h-[600px] overflow-hidden px-4 md:px-6">
         <div className="rounded-xl border border-gray-200/80 overflow-hidden bg-white">
           {/* -----------Video---------- */}
           <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
