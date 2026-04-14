@@ -2,24 +2,26 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section>
-      <div className="max-w-7xl mx-auto px-6 py-6">
-        {/*------------Header--------------*/}
-        <div className="flex items-center space-x-3 font-mono text-xs">
-          <span className="text-gray-400">3</span>
-          <span className="uppercase tracking-[0.14em] text-headerGreen">
-            Battle-Tested by the Best
-          </span>
-          <span className="text-gray-400">
-            Oliver Nybroe • [CORE-1667] Set PHPStan to max level
-          </span>
+    <section className="w-full bg-white border-y border-gray-100 mb-10 mt-10">
+      <div className="max-w-7xl mx-auto border-x border-gray-100">
+        {/*-------------Header------------ */}
+        <div className="flex border-b border-gray-100 items-stretch">
+          <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-gray-100 py-4 md:py-5">
+            <span className="text-gray-400 font-mono text-xs md:text-sm">3</span>
+          </div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12 py-4 md:py-5 flex items-center space-x-3 font-mono text-xs">
+            <span className="uppercase tracking-[0.14em] text-headerGreen">
+              Battle-Tested by the Best
+            </span>
+            <span className="text-gray-400 hidden sm:inline truncate">
+              Oliver Nybroe • [CORE-1667] Set PHPStan to max level
+            </span>
+          </div>
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto">
-        <div className="border border-gray-100 bg-white">
+        <div className="bg-white">
           {/* -----------Logos Row---------- */}
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-200 border-b border-gray-100">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-100 border-b border-gray-100">
             {/*---------Active Tab---------- */}
             <div className="relative -mb-[1px] flex items-center justify-center py-8 cursor-pointer hover:grayscale-0 hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]">
               <img

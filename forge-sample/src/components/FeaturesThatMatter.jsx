@@ -3,36 +3,44 @@ import { LockKeyhole, SquareCheck, Square, Globe } from "lucide-react";
 
 const FeaturesThatMatter = () => {
   return (
-    <section className="pt-10 pb-24">
-      {/* -----Header----- --- */}
-      <div className="max-w-7xl mx-auto px-6 border-t border-gray-100 py-6">
-        <div className="flex items-center space-x-3 font-mono text-xs">
-          <span className="text-gray-400">5</span>
-          <span className="text-headerGreen uppercase tracking-wider">
-            Features That Matter
-          </span>
-          <span className="text-gray-400 hidden sm:inline">
-            Irina Nita • [CORE-1528] Implement notification center actions
-          </span>
+    <section className="w-full bg-white border-y border-gray-100 mb-20 mt-10">
+      <div className="max-w-7xl mx-auto border-x border-gray-100">
+        {/*-------------Header------------ */}
+        <div className="flex border-b border-gray-100 items-stretch">
+          <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-gray-100 py-4 md:py-5">
+            <span className="text-gray-400 font-mono text-xs md:text-sm">5</span>
+          </div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12 py-4 md:py-5 flex items-center space-x-3 font-mono text-xs">
+            <span className="text-headerGreen uppercase tracking-wider">
+              Features That Matter
+            </span>
+            <span className="text-gray-400 hidden sm:inline truncate">
+              Irina Nita • [CORE-1528] Implement notification center actions
+            </span>
+          </div>
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-6">
-        {/* ------Main Header--------- */}
-        <div className="max-w-3xl py-12 md:py-16">
-          <h2 className="text-4xl md:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
-            Made for teams who just ship
-          </h2>
-          <p className="text-xl text-gray-500 leading-relaxed max-w-2xl">
-            Deploy, test, and scale your applications without the setup hassle.
-            Build faster and with delight.
-          </p>
+        {/* Hero Section */}
+        <div className="flex py-16 md:py-24">
+          <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="max-w-4xl">
+              <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
+                Made for teams who just ship
+              </h2>
+              <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-2xl">
+                Deploy, test, and scale your applications without the setup hassle.
+                Build faster and with delight.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* --------------2x2 Grid--[[[[[[[[- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 rounded-tl-xl overflow-hidden bg-white">
-          {/* ----------------Card 1--------------- */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+        <div className="w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-gray-100 bg-white">
+            {/* ----------------Card 1--------------- */}
+            <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Scriptable deployments, zero downtime
             </h3>
@@ -83,7 +91,7 @@ const FeaturesThatMatter = () => {
           </div>
 
           {/* -----------------Card 2------------ */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+          <div className="p-10 md:p-14 px-6 border-b lg:border-l-0 border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Free SSL certificates
             </h3>
@@ -138,7 +146,7 @@ const FeaturesThatMatter = () => {
           </div>
 
           {/* -------------------Card 3------------ */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+          <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Databases, managed
             </h3>
@@ -217,7 +225,7 @@ const FeaturesThatMatter = () => {
           </div>
 
           {/* ------------------Card 4-----------------*/}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+          <div className="p-10 md:p-14 flex flex-col px-6 border-b border-gray-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Test faster with hosted domains
             </h3>
@@ -272,37 +280,40 @@ const FeaturesThatMatter = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* ----------Bottom Grid----------*/}
-        <div className="grid grid-cols-1 md:grid-cols-3 border-l border-gray-100 bg-white">
-          <div className="p-10 md:py-16 md:px-14 border-b border-r border-gray-100">
-            <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
-              Queues as they should be
-            </h4>
-            <p className="text-gray-500 leading-relaxed">
-              Start and manage supervised queue workers directly. No more manual
-              Supervisor configuration.
-            </p>
-          </div>
+      {/* ----------Bottom Grid----------*/}
+      <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100 bg-white">
+            <div className="p-10 px-6 md:py-16 md:pr-10 lg:pr-14 md:pl-[136px] lg:pl-[168px]">
+              <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
+                Queues as they should be
+              </h4>
+              <p className="text-gray-500 leading-relaxed">
+                Start and manage supervised queue workers directly. No more manual
+                Supervisor configuration.
+              </p>
+            </div>
 
-          <div className="p-10 md:py-16 md:px-14 border-b border-r border-gray-100">
-            <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
-              Task & job scheduling
-            </h4>
-            <p className="text-gray-500 leading-relaxed">
-              Schedule recurring tasks with predefined intervals or custom cron
-              expressions.
-            </p>
-          </div>
+            <div className="p-10 px-6 md:py-16 md:px-10 lg:px-14">
+              <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
+                Task & job scheduling
+              </h4>
+              <p className="text-gray-500 leading-relaxed">
+                Schedule recurring tasks with predefined intervals or custom cron
+                expressions.
+              </p>
+            </div>
 
-          <div className="p-10 md:py-16 md:px-14 border-b border-r border-gray-100">
-            <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
-              ⌘K anything
-            </h4>
-            <p className="text-gray-500 leading-relaxed">
-              Do everything without reaching for the mouse with Forge's
-              feature-rich command palette.
-            </p>
+            <div className="p-10 px-6 md:py-16 md:px-10 lg:px-14">
+              <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
+                ⌘K anything
+              </h4>
+              <p className="text-gray-500 leading-relaxed">
+                Do everything without reaching for the mouse with Forge's
+                feature-rich command palette.
+              </p>
+            </div>
           </div>
         </div>
       </div>

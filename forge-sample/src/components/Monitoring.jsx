@@ -9,39 +9,46 @@ import { BiCopy } from "react-icons/bi";
 
 const Monitoring = () => {
   return (
-    <section>
-      {/* -----Header----- --- */}
-      <div className="max-w-7xl mx-auto p-5 border-t border-gray-200">
-        <div className="flex items-center space-x-3 font-mono text-xs">
-          <span className="text-gray-400">8</span>
-          <span className="text-headerGreen uppercase tracking-wider">
-            Monitoring
-          </span>
-          <span className="text-gray-400 hidden sm:inline">
-            Bruno Gaspar • [CORE-0000] Enable zero downtime deployments by
-            default
-          </span>
+    <section className="w-full bg-white border-y border-gray-100 mb-10 mt-10">
+      <div className="max-w-7xl mx-auto border-x border-gray-100">
+        {/*-------------Header------------ */}
+        <div className="flex border-b border-gray-100 items-stretch">
+          <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-gray-100 py-4 md:py-5">
+            <span className="text-gray-400 font-mono text-xs md:text-sm">8</span>
+          </div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12 py-4 md:py-5 flex items-center space-x-3 font-mono text-xs">
+            <span className="text-headerGreen uppercase tracking-wider">
+              Monitoring
+            </span>
+            <span className="text-gray-400 hidden sm:inline truncate">
+              Bruno Gaspar • [CORE-0000] Enable zero downtime deployments by default
+            </span>
+          </div>
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-6">
-        {/* ------Main Header--------- */}
-        <div className="py-12 md:py-16">
-          <h2 className="text-4xl md:text-[2rem] font-md text-gray-900 tracking-tight leading-tight mb-6">
-            Confidence in every deployment
-          </h2>
-          <p className="text-xl text-gray-500 leading-relaxed max-w-5xl">
-            View server and app metrics, logs, and notifications in one click.
-            Catch issues early with CPU, memory, and bandwidth charts, and
-            integrate seamlessly with Laravel Nightwatch for first-class
-            monitoring.
-          </p>
+        {/* Hero Section */}
+        <div className="flex py-16 md:py-24">
+          <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="max-w-4xl">
+              <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
+                Confidence in every deployment
+              </h2>
+              <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-4xl">
+                View server and app metrics, logs, and notifications in one click.
+                Catch issues early with CPU, memory, and bandwidth charts, and
+                integrate seamlessly with Laravel Nightwatch for first-class
+                monitoring.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* --------------2x2 Grid---------- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-200  overflow-hidden bg-white">
-          {/* ----------------Card 1--------------- */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+        <div className="w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-gray-100 bg-white">
+            {/* ----------------Card 1--------------- */}
+            <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Heartbeats
             </h3>
@@ -100,7 +107,7 @@ const Monitoring = () => {
           </div>
 
           {/* -----------------Card 2------------ */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+          <div className="p-10 md:p-14 px-6 border-b border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Health checks
             </h3>
@@ -171,7 +178,7 @@ const Monitoring = () => {
           </div>
 
           {/* -------------------Card 3------------ */}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+          <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Server monitoring
             </h3>
@@ -251,7 +258,7 @@ const Monitoring = () => {
           </div>
 
           {/* ------------------Card 4-----------------*/}
-          <div className="p-10 md:p-14 border-b border-r border-gray-100 flex flex-col">
+          <div className="p-10 md:p-14 px-6 border-b border-gray-100 flex flex-col">
             <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Log access
             </h3>
@@ -308,9 +315,10 @@ const Monitoring = () => {
               <div className="absolute inset-x-0 bottom-0 h-38 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
             </div>
           </div>
+          </div>
         </div>
 
-        <div className="w-full h-[60px] border border-gray-200"></div>
+        <div className="w-full h-[60px] bg-white"></div>
 
         {/*-----------Bottom Section------------- */}
         <div className="relative py-24 md:py-32 overflow-hidden bg-animate-gradient">

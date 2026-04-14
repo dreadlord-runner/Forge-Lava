@@ -3,38 +3,45 @@ import { Zap, Server } from "lucide-react";
 
 const LaravelVPS = () => {
   return (
-    <section className="bg-[#151715] text-white">
-      {/*--------Header--------- */}
-      <div className="max-w-7xl mx-auto px-6 border-t border-white/10 py-6">
-        <div className="flex items-center space-x-3 font-mono text-xs">
-          <span className="text-[#4e564c]">4</span>
-          <span className="text-headerGreen uppercase tracking-wider">
-            Laravel VPS
-          </span>
-          <span className="text-[#4e564c] hidden sm:inline">
-            Kieran Brown • [CORE-0022] Integrate Terminal service with Forge
-          </span>
+    <section className="w-full bg-[#151715] text-white border-y border-white/10 mt-10 mb-10">
+      <div className="max-w-7xl mx-auto border-x border-white/10">
+        {/*-------------Header------------ */}
+        <div className="flex border-b border-white/10 items-stretch">
+          <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-white/10 py-4 md:py-5">
+            <span className="text-[#4e564c] font-mono text-xs md:text-sm">4</span>
+          </div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12 py-4 md:py-5 flex items-center space-x-3 font-mono text-xs">
+            <span className="text-headerGreen uppercase tracking-wider">
+              Laravel VPS
+            </span>
+            <span className="text-[#4e564c] hidden sm:inline truncate">
+              Kieran Brown • [CORE-0022] Integrate Terminal service with Forge
+            </span>
+          </div>
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
-        <div className="max-w-4xl">
-          <h2 className="text-[#e5e5e5] text-xl md:text-[2rem] font-medium tracking-tight leading-tight mb-6">
-            A virtual private server to save time and money
-          </h2>
-          <p className="text-xl text-[#9aa299] leading-relaxed">
-            Laravel VPS keeps costs down and lets you provision in seconds, not
-            minutes. <br /> Set up with a single click, collaborate in real
-            time.{" "}
-          </p>
+        {/* Hero Section */}
+        <div className="flex py-16 md:py-24">
+          <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="max-w-4xl">
+              <h2 className="text-[#e5e5e5] text-[2rem] md:text-[2.25rem] lg:text-[2.5rem] font-medium tracking-tight leading-tight mb-6">
+                A virtual private server to save time and money
+              </h2>
+              <p className="text-lg md:text-[1.3rem] text-[#9aa299] leading-relaxed max-w-3xl">
+                Laravel VPS keeps costs down and lets you provision in seconds, not
+                minutes. <br className="hidden md:block" /> Set up with a single click, collaborate in real
+                time.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
 
       {/*----------2x2 Grid-------------- */}
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-white/10 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
           {/*-------card 1-------- */}
-          <div className="pt-16 lg:pr-16 flex flex-col">
+          <div className="pt-16 pb-16 px-6 md:pr-10 lg:pr-14 md:pl-[136px] lg:pl-[168px] flex flex-col">
             <h3 className="text-xl text-[#e5e5e5] font-bold mb-3">
               Instant provisioning
             </h3>
@@ -110,7 +117,7 @@ const LaravelVPS = () => {
             </div>
           </div>
           {/*-------------Card 2-----------------*/}
-          <div className="pt-16 lg:pl-16 flex flex-col relative pb-20">
+          <div className="pt-16 px-6 lg:pl-16 lg:pr-16 flex flex-col relative pb-20">
             <h3 className="text-xl text-[#e5e5e5] font-bold mb-3">
               Web terminal
             </h3>
@@ -183,19 +190,18 @@ const LaravelVPS = () => {
         </div>
       </div>
       {/* --- -----3-COLUMN ----- --- */}
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex border-y border-l border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
-          <div className="w-[7%] border border-white/10"> </div>
-          <div className="py-10 md:py-14 md:pr-12">
-            <h4 className="px-12 text-lg text-[#e5e5e5] font-bold mb-3">
+      <div className="w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div className="py-10 px-6 md:py-14 md:pr-10 lg:pr-14 md:pl-[136px] lg:pl-[168px]">
+            <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
               No external setup
             </h4>
-            <p className="text-[#9aa299] leading-relaxed pl-12">
+            <p className="text-[#9aa299] leading-relaxed">
               Provision and manage servers without leaving Forge.
             </p>
           </div>
 
-          <div className="py-10 md:py-14 md:px-12">
+          <div className="py-10 px-6 md:py-14 md:px-10 lg:px-14">
             <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
               Centralized billing
             </h4>
@@ -204,7 +210,7 @@ const LaravelVPS = () => {
             </p>
           </div>
 
-          <div className="py-10 md:py-14 md:pl-12">
+          <div className="py-10 px-6 md:py-14 md:px-10 lg:px-14">
             <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
               Stay ahead of issues
             </h4>
@@ -212,9 +218,9 @@ const LaravelVPS = () => {
               Track CPU, memory, and usage on your dashboard as it happens.
             </p>
           </div>
-          <div className="w-[7%] border border-white/10"> </div>
         </div>
       </div>
+    </div>
     </section>
   );
 };

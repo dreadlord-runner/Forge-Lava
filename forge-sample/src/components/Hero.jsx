@@ -76,7 +76,7 @@ const Hero = () => {
 
       {/* ----------Partners---------- */}
       <div className="w-full mt-20 mx-auto px-6 border-t border-gray-200 p-10">
-        <div className="flex flex-1 justify-center items-center gap-10 md:gap-20">
+        <div className="flex flex-1 justify-center items-center gap-10">
           <p className=" text-sm">
             <span className="text-gray">Trusted by</span>{" "}
             <span>
@@ -85,12 +85,12 @@ const Hero = () => {
             </span>
           </p>
 
-          <span className="text-xl font-bold">OpenAI</span>
-          <span className="text-xl font-bold">TailwindCSS</span>
-          <span className="text-xl font-bold">webex</span>
-          <span className="text-xl font-bold">Fandom</span>
-          <span className="text-xl font-bold">intel</span>
-          <span className="text-xl font-bold">bitwarden</span>
+          <img src="../src/assets/images/openai.svg" alt="OpenAI" />
+          <img src="../src/assets/images/tailwindcss.svg" alt="TailwindCSS" />
+          <img src="../src/assets/images/webex.svg" alt="Webex" />
+          <img src="../src/assets/images/siemens.svg" alt="Siemens" />
+          <img src="../src/assets/images/fandom.svg" alt="Fandom" />
+          <img src="../src/assets/images/red-hat.svg" alt="RedHat" />
         </div>
       </div>
     </section>

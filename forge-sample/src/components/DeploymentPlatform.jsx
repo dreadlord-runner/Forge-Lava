@@ -29,34 +29,44 @@ const DeploymentPlatform = () => {
   ];
 
   return (
-    <section className="border border-gray-200">
-      <div className="max-w-7xl mx-auto px-6">
-        {/*--------Header------- */}
-        <div className="mb-16 max-w-3xl py-4">
-          <div className="flex items-center space-x-3 font-mono text-xs mb-18">
-            <span className="text-gray-400">1</span>
-            <span className="text-headerGreen uppercase">
-              The Deplpoyment Platform
+    <section className="w-full bg-white border-y border-gray-100 mb-10 mt-10">
+      <div className="max-w-7xl mx-auto border-x border-gray-100 bg-white">
+        {/*-------------Header------------ */}
+        <div className="flex border-b border-gray-100 items-stretch">
+          <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-gray-100 py-4 md:py-5">
+            <span className="text-gray-400 font-mono text-xs md:text-sm">1</span>
+          </div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12 py-4 md:py-5 flex items-center space-x-3 font-mono text-xs">
+            <span className="text-headerGreen uppercase tracking-wider">
+              The Deployment Platform
             </span>
-            <span className="text-gray-400">
+            <span className="text-gray-400 hidden sm:inline truncate">
               James Brooks • [CORE-2627] Ship the next generation of Forge
             </span>
           </div>
+        </div>
 
-          <h2 className="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight mb-4 ml-15 ">
-            Simplify your deployments, build great apps
-          </h2>
-          <p className="text-xl text-gray-500 leading-relaxed ml-15">
-            Simplify deployment and server management with tools that <br />{" "}
-            scale, without the DevOps complexity.
-          </p>
+        {/* Hero Section */}
+        <div className="flex py-16 md:py-24">
+          <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
+          <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="max-w-4xl">
+              <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
+                Simplify your deployments, build great apps
+              </h2>
+              <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-2xl">
+                Simplify deployment and server management with tools that <br className="hidden md:block" /> scale, without the DevOps complexity.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* ---------2x2 Grid----------- */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-l border-gray-100 mt-12 overflow-hidden">
+        <div className="w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-gray-100 bg-white">
           {/*--------Card 1------ */}
-          <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">
+          <div className="p-10 px-6 md:p-14 border-b lg:border-r border-gray-100 md:pl-[136px] lg:pl-[168px] flex flex-col bg-white">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Launch your app your way
             </h3>
             <p className="text-gray-500 mb-12 leading-relaxed">
@@ -98,8 +108,8 @@ const DeploymentPlatform = () => {
           </div>
 
           {/*-----------Card 2---------- */}
-          <div className="p-10 md:p-10 border-r border-b border-gray-100 flex flex-col bg-white">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">
+          <div className="p-10 md:p-14 px-6 border-b border-gray-100 flex flex-col bg-white">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
               A full server stack, ready in minutes{" "}
             </h3>
             <p className="text-gray-500 mb-12  leading-relaxed">
@@ -155,8 +165,8 @@ const DeploymentPlatform = () => {
           </div>
 
           {/* --------Card 3--------- */}
-          <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">
+          <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col bg-white">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Create any type of server{" "}
             </h3>
             <p className="text-gray-500 mb-12 leading-relaxed">
@@ -196,8 +206,8 @@ const DeploymentPlatform = () => {
           </div>
 
           {/* ---------Card 4--------- */}
-          <div className="p-10 md:p-10 border-b border-r border-gray-100 flex flex-col bg-white">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">
+          <div className="p-10 md:p-14 px-6 border-b border-gray-100 flex flex-col bg-white">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
               Laravel-built, ready for anything
             </h3>
             <p className="text-gray-500 mb-12 leading-relaxed">
@@ -252,7 +262,8 @@ const DeploymentPlatform = () => {
             </div>
           </div>
         </div>
-        <div className="h-15 border-l border-r border-gray-100"></div>
+        </div>
+        <div className="h-15 w-full bg-white"></div>
       </div>
     </section>
   );
