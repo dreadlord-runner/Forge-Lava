@@ -50,7 +50,7 @@ const DeploymentPlatform = () => {
           {/* Hero Section */}
           <div className="flex py-16 md:py-20">
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
-            <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="-mx-4">
               <div className="max-w-4xl">
                 <h2 className="text-[2rem] font-medium text-gray-900 tracking-tight leading-tight mb-4">
                   Simplify your deployments, build great apps
