@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { tweetPosts } from "../../data/tweetPosts";
 
 const columns = Array.from({ length: 5 }, (_, columnIndex) =>
@@ -15,14 +15,29 @@ const columnOffsets = [
 
 const BuildForDevelopers = () => {
   const [showAll, setShowAll] = useState(false);
+  const sectionRef = useRef(null);
+
+  const handleToggle = () => {
+    if (showAll && sectionRef.current) {
+      const topOffset =
+        sectionRef.current.getBoundingClientRect().top + window.scrollY - 100;
+      window.scrollTo({ top: topOffset, behavior: "smooth" });
+    }
+    setShowAll(!showAll);
+  };
 
   return (
-    <section className="w-full bg-white border-t border-gray-100 mt-20 mb-10 overflow-hidden pb-10">
+    <section
+      ref={sectionRef}
+      className="w-full bg-white border-t border-gray-100 mt-20 mb-10 overflow-hidden pb-10"
+    >
       <div className="max-w-7xl mx-auto">
         {/*-------------Header------------ */}
         <div className="flex border-b border-gray-100 items-stretch">
           <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-gray-100 py-4 md:py-5">
-            <span className="text-gray-400 font-mono text-xs md:text-sm">6</span>
+            <span className="text-gray-400 font-mono text-xs md:text-sm">
+              6
+            </span>
           </div>
           <div className="flex-1 px-6 md:px-10 lg:px-12 py-4 md:py-5 flex items-center space-x-3 font-mono text-xs">
             <span className="text-headerGreen uppercase tracking-wider">
@@ -43,7 +58,9 @@ const BuildForDevelopers = () => {
                 10+ years of developer love
               </h2>
               <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-2xl">
-                Crafted with passion for over a decade, <br className="hidden md:block" /> loved by web artisans shaping the modern web.
+                Crafted with passion for over a decade,{" "}
+                <br className="hidden md:block" /> loved by web artisans shaping
+                the modern web.
               </p>
             </div>
           </div>
@@ -51,7 +68,9 @@ const BuildForDevelopers = () => {
       </div>
 
       {/*-------------Tweet Post--------------*/}
-      <div className={`relative mx-auto mt-4 max-w-[1740px] px-4 sm:px-6 lg:mt-8 lg:px-8 transition-all duration-500 ease-in-out ${showAll ? '' : 'h-[760px] sm:h-[820px] lg:h-[900px] overflow-hidden'}`}>
+      <div
+        className={`relative mx-auto mt-4 max-w-[1740px] px-4 sm:px-6 lg:mt-8 lg:px-8 transition-all duration-500 ease-in-out ${showAll ? "" : "h-[760px] sm:h-[820px] lg:h-[900px] overflow-hidden"}`}
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 pt-30">
           {columns.map((column, columnIndex) => (
             <div
@@ -83,22 +102,33 @@ const BuildForDevelopers = () => {
           ))}
         </div>
 
+        {/*----------------Button------------------- */}
+        {showAll && (
+          <div className="sticky bottom-8 z-50 flex justify-center pointer-events-none mt-10 pb-8">
+            <button
+              onClick={handleToggle}
+              className="pointer-events-auto rounded-lg border border-dark bg-dark px-7 py-2.5 text-sm font-semibold tracking-wide text-white transition hover:bg-gray-800 cursor-pointer shadow-2xl shadow-black/40"
+            >
+              Show less
+            </button>
+          </div>
+        )}
+
         {!showAll && (
           <>
             <div className="pointer-events-none absolute inset-x-0 right-0 h-20 bg-gradient-to-b from-white via-white/80 to-transparent" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-white via-white/90 to-transparent flex flex-col justify-end items-center pb-8">
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-white via-white/90 to-transparent flex flex-col justify-end items-center pb-8" />
+
+            <div className="flex justify-center flex-col items-center pointer-events-none absolute inset-x-0 bottom-8 z-10">
+              <button
+                onClick={handleToggle}
+                className="pointer-events-auto rounded-lg border border-dark bg-dark px-7 py-2.5 text-sm font-semibold tracking-wide text-white transition hover:bg-gray-800 cursor-pointer shadow-sm"
+              >
+                Show more
+              </button>
             </div>
           </>
         )}
-        
-        <div className={`flex justify-center ${showAll ? 'mt-16' : 'absolute inset-x-0 bottom-8 z-10'}`}>
-          <button 
-            onClick={() => setShowAll(!showAll)}
-            className="rounded-lg border border-dark bg-dark px-7 py-2.5 text-sm font-semibold tracking-wide text-white shadow-sm transition hover:bg-gray-800 cursor-pointer"
-          >
-            {showAll ? 'Show less' : 'Show more'}
-          </button>
-        </div>
       </div>
     </section>
   );

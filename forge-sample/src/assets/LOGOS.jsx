@@ -1,55 +1,149 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-// Swap these placeholders out with your actual SVG components.
-const LOGOS = [
+const LOGOS_LIST = [
   <div
-    key="namecheap"
-    className="h-16 w-48 bg-gray-200 text-center leading-[4rem]"
+    key="openai"
+    className="h-full w-full flex items-center justify-center p-2"
   >
-    Namecheap SVG
+    <img
+      src="../src/assets/images/openai.svg"
+      alt="OpenAI"
+      className="h-full object-contain max-h-[40px]"
+    />
   </div>,
-  <div key="intel" className="h-16 w-48 bg-gray-200 text-center leading-[4rem]">
-    Intel SVG
+  <div
+    key="intel"
+    className="h-full w-full flex items-center justify-center p-2"
+  >
+    <img
+      src="../src/assets/images/intel.svg"
+      alt="Intel"
+      className="h-full object-contain max-h-[40px]"
+    />
   </div>,
   <div
     key="siemens"
-    className="h-16 w-48 bg-gray-200 text-center leading-[4rem]"
+    className="h-full w-full flex items-center justify-center p-2"
   >
-    Siemens SVG
+    <img
+      src="../src/assets/images/siemens.svg"
+      alt="Siemens"
+      className="h-full object-contain max-h-[40px]"
+    />
   </div>,
-  <div key="nfl" className="h-16 w-48 bg-gray-200 text-center leading-[4rem]">
-    NFL SVG
+  <div key="nfl" className="h-full w-full flex items-center justify-center p-2">
+    <img
+      src="../src/assets/images/nfl.svg"
+      alt="NFL"
+      className="h-full object-contain max-h-[40px]"
+    />
   </div>,
   <div
-    key="laravel"
-    className="h-16 w-48 bg-gray-200 text-center leading-[4rem]"
+    key="redhat"
+    className="h-full w-full flex items-center justify-center p-2"
   >
-    Laravel SVG
+    <img
+      src="../src/assets/images/red-hat.svg"
+      alt="RedHat"
+      className="h-full object-contain max-h-[40px]"
+    />
+  </div>,
+  <div
+    key="webex"
+    className="h-full w-full flex items-center justify-center p-2"
+  >
+    <img
+      src="../src/assets/images/webex.svg"
+      alt="Webex"
+      className="h-full object-contain max-h-[40px]"
+    />
+  </div>,
+  <div
+    key="stanford"
+    className="h-full w-full flex items-center justify-center p-2"
+  >
+    <img
+      src="../src/assets/images/stanford.svg"
+      alt="Stanford"
+      className="h-full object-contain max-h-[40px]"
+    />
+  </div>,
+  <div
+    key="bitwarden"
+    className="h-full w-full flex items-center justify-center p-2"
+  >
+    <img
+      src="../src/assets/images/bitwarden.svg"
+      alt="BitWarden"
+      className="h-full object-contain max-h-[40px]"
+    />
+  </div>,
+  <div
+    key="mercedes-benz"
+    className="h-full w-full flex items-center justify-center p-2"
+  >
+    <img
+      src="../src/assets/images/mercedes-benz.svg"
+      alt="Mercedes Benz"
+      className="h-full object-contain max-h-[40px]"
+    />
   </div>,
 ];
 
+function shuffleArray(array) {
+  let shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export default function VerticalLogoMarquee() {
+  const [logos, setLogos] = useState(() => shuffleArray(LOGOS_LIST));
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    if (logos.length === 0) return;
+
+    const delay = 2000 + Math.random() * 1000;
+
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setLogos((prev) => {
+          const newLogos = [...prev];
+          const first = newLogos.shift();
+          newLogos.push(first);
+          return newLogos;
+        });
+      }, 500);
+    }, delay);
+
+    return () => clearInterval(interval);
+  }, [logos]);
+
+  if (logos.length === 0) return null;
+
   return (
-    // The container needs a fixed or maximum height so the vertical scroll is constrained
-    <section className="relative flex justify-center w-full h-[500px] overflow-hidden bg-white">
-      {/* Edge Fade Masks: Moved to top and bottom, using bg-gradient-to-b and bg-gradient-to-t */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-24 bg-gradient-to-b from-white to-transparent"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-24 bg-gradient-to-t from-white to-transparent"></div>
-
-      {/* Marquee Track: Switched to flex-col and h-max */}
-      <div className="flex flex-col h-max animate-marquee-vertical hover:[animation-play-state:paused]">
-        {/* Set 1 */}
-        <div className="flex flex-col shrink-0 items-center justify-around gap-12 py-6">
-          {LOGOS}
-        </div>
-
-        {/* Set 2 (Exact Duplicate) */}
-        <div
-          aria-hidden="true"
-          className="flex flex-col shrink-0 items-center justify-around gap-12 py-6"
-        >
-          {LOGOS}
-        </div>
+    <section className="relative flex justify-center w-full h-[60px] overflow-hidden bg-white">
+      <div
+        className={`flex flex-col w-full ${isTransitioning ? "transition-transform duration-500 ease-in-out" : ""}`}
+        style={{
+          transform: isTransitioning ? "translateY(-60px)" : "translateY(0px)",
+        }}
+      >
+        {/* Render only the active logo and the next upcoming logo */}
+        {logos.slice(0, 2).map((logo, index) => (
+          <div
+            key={`${logo.key}-${index}`}
+            className="h-[60px] w-full flex items-center justify-center shrink-0"
+          >
+            {logo}
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { CirclePlay } from "lucide-react";
 import { ArrowRight, Layers } from "lucide-react";
 import bannerVideo from "../assets/images/banner.mp4";
+import VerticalLogoMarquee from "../assets/LOGOS";
 
 const Hero = () => {
   return (
@@ -35,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
       {/*--------------Video Dashboard----------*/}
-      <div className="relative mx-auto w-full max-w-[1300px] h-[500px] overflow-hidden px-4 md:px-6">
+      <div className="relative mx-auto w-full max-w-[1400px] h-[500px] overflow-hidden px-4 md:px-6">
         <div className="rounded-xl border border-gray-200/80 overflow-hidden bg-white">
           {/* -----------Video---------- */}
           <div className="relative w-full aspect-[16/9] bg-gray-50 border-b border-gray-100">
@@ -80,25 +81,22 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center justify-center py-8 px-4">
-              <img src="../src/assets/images/openai.svg" alt="OpenAI" />
+              <VerticalLogoMarquee />
             </div>
             <div className="flex items-center justify-center py-8 px-4">
-              <img
-                src="../src/assets/images/tailwindcss.svg"
-                alt="TailwindCSS"
-              />
+              <VerticalLogoMarquee />
             </div>
             <div className="flex items-center justify-center py-8 px-4">
-              <img src="../src/assets/images/webex.svg" alt="Webex" />
+              <VerticalLogoMarquee />
             </div>
             <div className="flex items-center justify-center py-8 px-4">
-              <img src="../src/assets/images/siemens.svg" alt="Siemens" />
+              <VerticalLogoMarquee />
             </div>
             <div className="flex items-center justify-center py-8 px-4">
-              <img src="../src/assets/images/fandom.svg" alt="Fandom" />
+              <VerticalLogoMarquee />
             </div>
             <div className="flex items-center justify-center py-8 px-4">
-              <img src="../src/assets/images/red-hat.svg" alt="RedHat" />
+              <VerticalLogoMarquee />
             </div>
           </div>
         </div>
