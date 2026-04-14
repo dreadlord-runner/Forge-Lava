@@ -29,7 +29,7 @@ const DeploymentPlatform = () => {
   ];
 
   return (
-    <div>
+    <section>
       {/*-------------Header------------ */}
       <div className="flex items-stretch bg-innerBorderGray">
         <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center border-r border-gray-100 py-2 md:py-2.5 ml-[9px]">
@@ -45,7 +45,7 @@ const DeploymentPlatform = () => {
         </div>
       </div>
 
-      <section className="w-full bg-white border-y border-gray-100">
+      <div className="w-full bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto border-x border-gray-100 bg-white">
           {/* Hero Section */}
           <div className="flex py-16 md:py-20">
@@ -280,8 +280,8 @@ const DeploymentPlatform = () => {
           </div>
           <div className="h-15 w-full bg-white"></div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
