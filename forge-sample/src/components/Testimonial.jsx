@@ -5,10 +5,10 @@ const Testimonial = () => {
     <section>
       {/*-------------Header------------ */}
       <div className="flex items-stretch bg-innerBorderGray">
-        <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5 ml-[9px]">
+        <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5">
           <span className="text-gray-400 font-mono text-xs md:text-sm">3</span>
         </div>
-        <div className="flex-1 px-6 md:px-10 lg:px-12 py-2 md:py-2.5 flex items-center space-x-3 font-mono text-xs">
+        <div className="flex-1 px-8 flex items-center space-x-3 font-mono text-xs">
           <span className="uppercase tracking-[0.14em] text-headerGreen">
             Battle-Tested by the Best
           </span>
@@ -17,7 +17,7 @@ const Testimonial = () => {
           </span>
         </div>
       </div>
-      <div className="w-full bg-white border-y border-gray-100">
+      <div className="w-full bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto border-x border-gray-100">
           <div className="bg-white">
             {/* -----------Logos Row---------- */}

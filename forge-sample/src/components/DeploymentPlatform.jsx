@@ -35,7 +35,7 @@ const DeploymentPlatform = () => {
         <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5">
           <span className="text-gray-400 font-mono text-xs md:text-sm">1</span>
         </div>
-        <div className="flex-1 px-6 md:px-10 lg:px-12 py-2 md:py-2.5 flex items-center space-x-3 font-mono text-xs">
+        <div className="flex-1 px-8 flex items-center space-x-3 font-mono text-xs">
           <span className="text-headerGreen uppercase tracking-wider">
             The Deployment Platform
           </span>

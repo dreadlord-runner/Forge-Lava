@@ -5,11 +5,11 @@ const LaravelVPS = () => {
   return (
     <section>
       {/*-------------Header------------ */}
-      <div className="flex items-stretch bg-[#151715]">
+      <div className="flex items-stretch border-t border-white/10 bg-[#151715]">
         <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5">
           <span className="text-[#4e564c] font-mono text-xs md:text-sm">4</span>
         </div>
-        <div className="flex-1 px-6 md:px-10 lg:px-12 py-2 md:py-2.5 flex items-center space-x-3 font-mono text-xs">
+        <div className="flex-1 px-8 flex items-center space-x-3 font-mono text-xs">
           <span className="text-headerGreen uppercase tracking-wider">
             Laravel VPS
           </span>
@@ -18,7 +18,7 @@ const LaravelVPS = () => {
           </span>
         </div>
       </div>
-      <div className="w-full bg-[#151715] text-white border-y border-white/10 mb-10">
+      <div className="w-full bg-[#151715] text-white border-y border-white/10">
         <div className="max-w-7xl mx-auto border-x border-white/10">
           {/* Hero Section */}
           <div className="flex py-16 md:py-24">
