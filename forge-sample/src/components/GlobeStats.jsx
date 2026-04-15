@@ -1,4 +1,5 @@
 import React from "react";
+import globeImage from "../assets/images/globe.svg";
 
 const GlobeStats = () => {
   return (
@@ -66,7 +67,7 @@ const GlobeStats = () => {
               <div className="relative flex justify-center lg:justify-end z-0">
                 <div className="globe-fade w-full max-w-[500px] lg:scale-125 lg:translate-x-32 xl:translate-x-48">
                   <img
-                    src="../src/assets/images/globe.svg"
+                    src={globeImage}
                     alt="Global Infrastructure"
                     className="w-full h-auto object-contain opacity-60"
                   />

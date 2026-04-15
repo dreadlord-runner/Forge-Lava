@@ -1,5 +1,6 @@
 import React from "react";
 import { Zap, Server } from "lucide-react";
+import batmanAvatar from "../assets/images/batman.png";
 
 const LaravelVPS = () => {
   return (
@@ -154,7 +155,7 @@ const LaravelVPS = () => {
                     <div className="relative flex-shrink-0">
                       <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-700">
                         <img
-                          src="../src/assets/images/batman.png"
+                          src={batmanAvatar}
                           alt="Avatar"
                           className="w-full h-full object-cover"
                         />

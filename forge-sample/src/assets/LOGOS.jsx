@@ -1,4 +1,13 @@
 import React, { useState, useEffect } from "react";
+import openaiLogo from "./images/openai.svg";
+import intelLogo from "./images/intel.svg";
+import siemensLogo from "./images/siemens.svg";
+import nflLogo from "./images/nfl.svg";
+import redHatLogo from "./images/red-hat.svg";
+import webexLogo from "./images/webex.svg";
+import stanfordLogo from "./images/stanford.svg";
+import bitwardenLogo from "./images/bitwarden.svg";
+import mercedesBenzLogo from "./images/mercedes-benz.svg";
 
 const LOGOS_LIST = [
   <div
@@ -6,7 +15,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/openai.svg"
+      src={openaiLogo}
       alt="OpenAI"
       className="h-full object-contain max-h-[40px]"
     />
@@ -16,7 +25,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/intel.svg"
+      src={intelLogo}
       alt="Intel"
       className="h-full object-contain max-h-[40px]"
     />
@@ -26,14 +35,14 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/siemens.svg"
+      src={siemensLogo}
       alt="Siemens"
       className="h-full object-contain max-h-[40px]"
     />
   </div>,
   <div key="nfl" className="h-full w-full flex items-center justify-center p-2">
     <img
-      src="../src/assets/images/nfl.svg"
+      src={nflLogo}
       alt="NFL"
       className="h-full object-contain max-h-[40px]"
     />
@@ -43,7 +52,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/red-hat.svg"
+      src={redHatLogo}
       alt="RedHat"
       className="h-full object-contain max-h-[40px]"
     />
@@ -53,7 +62,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/webex.svg"
+      src={webexLogo}
       alt="Webex"
       className="h-full object-contain max-h-[40px]"
     />
@@ -63,7 +72,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/stanford.svg"
+      src={stanfordLogo}
       alt="Stanford"
       className="h-full object-contain max-h-[40px]"
     />
@@ -73,7 +82,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/bitwarden.svg"
+      src={bitwardenLogo}
       alt="BitWarden"
       className="h-full object-contain max-h-[40px]"
     />
@@ -83,7 +92,7 @@ const LOGOS_LIST = [
     className="h-full w-full flex items-center justify-center p-2"
   >
     <img
-      src="../src/assets/images/mercedes-benz.svg"
+      src={mercedesBenzLogo}
       alt="Mercedes Benz"
       className="h-full object-contain max-h-[40px]"
     />

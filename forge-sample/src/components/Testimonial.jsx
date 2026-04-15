@@ -1,4 +1,9 @@
 import React from "react";
+import transistorLogo from "../assets/images/transistor_active-D_BETxq_.svg";
+import astaltyLogo from "../assets/images/astalty_active-BKjeao8a.svg";
+import mumsnetLogo from "../assets/images/mumsnet_active-BZyMx3wx.svg";
+import likkerLogo from "../assets/images/likker_active-LGmXIpRd.svg";
+import justinJacksonImage from "../assets/images/Justin_Jackson-B4TIG0MS.svg";
 
 const Testimonial = () => {
   return (
@@ -25,7 +30,7 @@ const Testimonial = () => {
               {/*---------Active Tab---------- */}
               <div className="relative  flex items-center justify-center py-8 cursor-pointer hover:grayscale-0 hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]">
                 <img
-                  src="../src/assets/images/transistor_active-D_BETxq_.svg"
+                  src={transistorLogo}
                   alt="Transistor"
                   className="h-8"
                 />
@@ -34,21 +39,21 @@ const Testimonial = () => {
               {/*--------Inactive Tab-------- */}
               <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
                 <img
-                  src="../src/assets/images/astalty_active-BKjeao8a.svg"
+                  src={astaltyLogo}
                   alt="Astalty"
                   className="h-8"
                 />
               </div>
               <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
                 <img
-                  src="../src/assets/images/mumsnet_active-BZyMx3wx.svg"
+                  src={mumsnetLogo}
                   alt="mumsnet"
                   className="h-8"
                 />
               </div>
               <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
                 <img
-                  src="../src/assets/images/likker_active-LGmXIpRd.svg"
+                  src={likkerLogo}
                   alt="Likker"
                   className="h-8"
                 />
@@ -60,7 +65,7 @@ const Testimonial = () => {
               <div className="md:col-span-4 flex items-center justify-center min-h-[460px] overflow-hidden bg-white py-18">
                 <div className="relative w-full">
                   <img
-                    src="../src/assets/images/Justin_Jackson-B4TIG0MS.svg"
+                    src={justinJacksonImage}
                     alt="Justin Jackson"
                     className="w-full opacity-55"
                     style={{
