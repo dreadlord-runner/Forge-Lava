@@ -19,16 +19,14 @@ const GlobeStats = () => {
       </div>
       <div className="w-full bg-[#151715] text-white overflow-hidden border-y border-white/10">
         <div className="max-w-7xl mx-auto border-l border-white/10">
-          {/* Hero & Content Section */}
           <div className="flex py-16 md:py-32">
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
-            <div className="flex-1 px-6 md:px-10 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Left Column (Text & Stats) */}
+            <div className="flex-1 px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="z-10">
-                <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold tracking-tight leading-tight mb-6 text-[#e5e5e5]">
+                <h2 className="text-[2rem] font-medium leading-tight mb-4 text-[#e5e5e5]">
                   Powering the web, at scale
                 </h2>
-                <p className="text-lg md:text-[1.3rem] text-[#9aa299] leading-relaxed max-w-xl mb-16">
+                <p className="text-lg md:text-[1.3rem] text-[#9aa299] max-w-xl mb-16">
                   From solo projects to enterprise infrastructure, Forge keeps
                   applications running smoothly worldwide.
                 </p>

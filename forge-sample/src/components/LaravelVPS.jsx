@@ -23,12 +23,12 @@ const LaravelVPS = () => {
           {/* Hero Section */}
           <div className="flex py-16 md:py-24">
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
-            <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="flex-1">
               <div className="max-w-4xl">
-                <h2 className="text-[#e5e5e5] text-[2rem] md:text-[2.25rem] lg:text-[2.5rem] font-medium tracking-tight leading-tight mb-6">
+                <h2 className="text-[#e5e5e5] text-[2rem] tracking-tight leading-tight mb-6">
                   A virtual private server to save time and money
                 </h2>
-                <p className="text-lg md:text-[1.3rem] text-[#9aa299] leading-relaxed max-w-3xl">
+                <p className="text-[1.3rem] font-light text-[#9aa299] leading-relaxed max-w-3xl">
                   Laravel VPS keeps costs down and lets you provision in
                   seconds, not minutes. <br className="hidden md:block" /> Set
                   up with a single click, collaborate in real time.
@@ -41,8 +41,8 @@ const LaravelVPS = () => {
           <div className="w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-white/10 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
               {/*-------card 1-------- */}
-              <div className="pt-16 pb-16 px-6 md:pr-10 lg:pr-14 md:pl-[136px] lg:pl-[168px] flex flex-col">
-                <h3 className="text-xl text-[#e5e5e5] font-bold mb-3">
+              <div className="py-10 px-25 flex flex-col">
+                <h3 className="text-xl text-[#e5e5e5] mb-3">
                   Instant provisioning
                 </h3>
                 <p className="text-[#9aa299] leading-relaxed mb-12">
@@ -51,8 +51,8 @@ const LaravelVPS = () => {
                 </p>
 
                 {/* ------Card 1-------- */}
-                <div className="w-[80%] h-[50%] relative left-10 bottom-20 pt-4 pl-4 rounded-tl-2xl border-t border-l border-white/10 mt-auto overflow-hidden bg-[#1b1d1b]">
-                  <div className="p-6 -mt-2 -ml-2 border border-white/10 rounded-2xl bg-[#212321]">
+                <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-white/10 overflow-hidden bg-[#1b1d1b]">
+                  <div className="p-6 border border-white/10 rounded-2xl bg-[#212321]">
                     <div className=" w-[110%] sm:w-full">
                       <div className="flex items-center space-x-2 text-headerGreen mb-6 pl-2">
                         <Zap size={16} fill="currentColor" />
@@ -117,17 +117,15 @@ const LaravelVPS = () => {
                 </div>
               </div>
               {/*-------------Card 2-----------------*/}
-              <div className="pt-16 px-6 lg:pl-16 lg:pr-16 flex flex-col relative pb-20">
-                <h3 className="text-xl text-[#e5e5e5] font-bold mb-3">
-                  Web terminal
-                </h3>
+              <div className="px-18 py-10 flex flex-col">
+                <h3 className="text-xl text-[#e5e5e5] mb-3">Web terminal</h3>
                 <p className="text-[#9aa299] leading-relaxed mb-12 lg:pr-10">
                   Real-time shared terminal sessions let your team collaborate
                   directly and securely on Forge.
                 </p>
 
                 {/*--------Mock Container-----------*/}
-                <div className="relative mt-auto">
+                <div className="relative">
                   {/*------------ Fake Terminal Window----------- */}
                   <div className="w-full max-w-md ml-auto rounded-xl border-t border-l border-white/10 bg-[#0a0a0a] overflow-hidden">
                     {/*--------- Terminal Header--------- */}
@@ -194,7 +192,7 @@ const LaravelVPS = () => {
             <div className="flex flex-row max-w-7xl mx-auto border-y border-white/10 divide-y md:divide-y-0 md:divide-x divide-white/10">
               <div className="w-[60px]" />
               <div className="flex-1 py-10 px-6 md:py-14 md:px-10">
-                <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
+                <h4 className="text-lg text-[#e5e5e5] mb-3">
                   No external setup
                 </h4>
                 <p className="text-[#9aa299] leading-relaxed">
@@ -203,7 +201,7 @@ const LaravelVPS = () => {
               </div>
 
               <div className="flex-1 py-10 px-6 md:py-14 md:px-10">
-                <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
+                <h4 className="text-lg text-[#e5e5e5]  mb-3">
                   Centralized billing
                 </h4>
                 <p className="text-[#9aa299] leading-relaxed">
@@ -212,7 +210,7 @@ const LaravelVPS = () => {
               </div>
 
               <div className="flex-1 py-10 px-6 md:py-14 md:px-10">
-                <h4 className="text-lg text-[#e5e5e5] font-bold mb-3">
+                <h4 className="text-lg text-[#e5e5e5] mb-3">
                   Stay ahead of issues
                 </h4>
                 <p className="text-[#9aa299] leading-relaxed">

@@ -23,12 +23,11 @@ const Faq = () => {
       </div>
       <div className="w-full bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto border-x border-gray-100">
-          {/* Hero Section */}
           <div className="flex pt-16 pb-8 md:pt-24 md:pb-12">
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
             <div className="flex-1 px-6 md:px-10 lg:px-35">
               <div className="max-w-4xl">
-                <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-4">
+                <h2 className="text-[2rem] font-medium text-gray-900 tracking-tight leading-tight mb-4">
                   FAQ
                 </h2>
                 <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-4xl">
@@ -39,7 +38,7 @@ const Faq = () => {
           </div>
 
           {/*----------FAQs---------------- */}
-          <div className="w-full bg-white pb-20 px-24">
+          <div className="w-full bg-white pb-20">
             <div className="border-t border-gray-100">
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
@@ -50,12 +49,11 @@ const Faq = () => {
                     className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex w-full">
-                      <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
-                      <div className="flex-1 px-6 md:px-10 lg:px-12">
+                      <div className="mx-auto px-6 md:px-10 lg:px-12">
                         <div className="max-w-3xl">
                           <button
                             onClick={() => toggleFaq(index)}
-                            className="w-full py-6 flex justify-between items-center text-left focus:outline-none group"
+                            className="w-full py-6 flex justify-between items-center focus:outline-none group"
                             aria-expanded={isOpen}
                           >
                             <span className="text-[1.1rem] font-medium text-gray-900">
@@ -94,6 +92,7 @@ const Faq = () => {
             </div>
           </div>
         </div>
+        <div className="h-15 w-full border-t border-gray-100 bg-white"></div>
       </div>
     </section>
   );

@@ -23,10 +23,11 @@ const Testimonial = () => {
             {/* -----------Logos Row---------- */}
             <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-100 border-b border-gray-100">
               {/*---------Active Tab---------- */}
-              <div className="relative -mb-[1px] flex items-center justify-center py-8 cursor-pointer hover:grayscale-0 hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]">
+              <div className="relative  flex items-center justify-center py-8 cursor-pointer hover:grayscale-0 hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]">
                 <img
                   src="../src/assets/images/transistor_active-D_BETxq_.svg"
                   alt="Transistor"
+                  className="h-8"
                 />
               </div>
 
@@ -35,18 +36,21 @@ const Testimonial = () => {
                 <img
                   src="../src/assets/images/astalty_active-BKjeao8a.svg"
                   alt="Astalty"
+                  className="h-8"
                 />
               </div>
               <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
                 <img
                   src="../src/assets/images/mumsnet_active-BZyMx3wx.svg"
                   alt="mumsnet"
+                  className="h-8"
                 />
               </div>
               <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
                 <img
                   src="../src/assets/images/likker_active-LGmXIpRd.svg"
                   alt="Likker"
+                  className="h-8"
                 />
               </div>
             </div>

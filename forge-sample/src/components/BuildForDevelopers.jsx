@@ -49,13 +49,12 @@ const BuildForDevelopers = () => {
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
           <div className="flex py-16 md:py-24">
-            <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
             <div className="flex-1 px-6 md:px-10 lg:px-12">
-              <div className="max-w-4xl">
-                <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
+              <div className="max-w-4x flex-1">
+                <h2 className="text-[2rem] font-medium text-gray-900 tracking-tight mb-6 text-center">
                   10+ years of developer love
                 </h2>
-                <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-2xl">
+                <p className="text-xl text-gray-500 text-center">
                   Crafted with passion for over a decade,{" "}
                   <br className="hidden md:block" /> loved by web artisans
                   shaping the modern web.

@@ -27,15 +27,14 @@ const Monitoring = () => {
       </div>
       <div className="w-full bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto border-x border-gray-100">
-          {/* Hero Section */}
           <div className="flex py-16 md:py-24">
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
-            <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="flex-1">
               <div className="max-w-4xl">
-                <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
+                <h2 className="text-[2rem] text-gray-900 tracking-tight leading-tight mb-2">
                   Confidence in every deployment
                 </h2>
-                <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-4xl">
+                <p className="text-[1.3rem] font-light text-gray-500 leading-relaxed w-5xl">
                   View server and app metrics, logs, and notifications in one
                   click. Catch issues early with CPU, memory, and bandwidth
                   charts, and integrate seamlessly with Laravel Nightwatch for
@@ -49,11 +48,11 @@ const Monitoring = () => {
           <div className="w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-gray-100 bg-white">
               {/* ----------------Card 1--------------- */}
-              <div className="p-10 px-16 border-b lg:border-r border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="p-10 px-15 border-b lg:border-r border-gray-100 flex flex-col">
+                <h3 className="text-lg font-medium text-gray-900 mb-3 px-10">
                   Heartbeats
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed w-[450px]">
+                <p className="text-gray-500 mb-12 w-[500px] px-10">
                   Forge monitors scheduled jobs, alerting you if they’re
                   delayed.
                 </p>
@@ -111,11 +110,11 @@ const Monitoring = () => {
               </div>
 
               {/* -----------------Card 2------------ */}
-              <div className="p-10 px-16 border-b border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="p-10 px-15 border-b border-gray-100 flex flex-col">
+                <h3 className="text-lg font-medium text-gray-900 mb-3 px-10">
                   Health checks
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed w-[440px]">
+                <p className="text-gray-500 mb-12 w-[470px] px-10">
                   Move to production with confidence. Health checks ping apps
                   post-deployment to verify they're live.
                 </p>
@@ -182,11 +181,11 @@ const Monitoring = () => {
               </div>
 
               {/* -------------------Card 3------------ */}
-              <div className="p-10 px-16 border-b lg:border-r border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="p-10 px-15 border-b lg:border-r border-gray-100 flex flex-col">
+                <h3 className="text-lg font-medium text-gray-900 mb-3 px-10">
                   Server monitoring
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed w-[420px]">
+                <p className="text-gray-500 mb-12 leading-relaxed w-[420px] px-10">
                   Monitor CPU, disk, and load at a glance with enhanced charts.
                   Get instant alerts when things change.
                 </p>
@@ -262,11 +261,11 @@ const Monitoring = () => {
               </div>
 
               {/* ------------------Card 4-----------------*/}
-              <div className="p-10 px-16 border-b border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="p-10 px-15 border-b border-gray-100 flex flex-col">
+                <h3 className="text-lg font-medium text-gray-900 mb-3 px-10">
                   Log access
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed w-[420px]">
+                <p className="text-gray-500 mb-12 leading-relaxed w-[470px] px-10">
                   Take the guesswork out of your server maintenance with
                   detailed records of system activities and events.
                 </p>

@@ -23,12 +23,12 @@ const FeaturesThatMatter = () => {
           {/* Hero Section */}
           <div className="flex py-16 md:py-24">
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
-            <div className="flex-1 px-6 md:px-10 lg:px-12">
+            <div className="flex-1">
               <div className="max-w-4xl">
-                <h2 className="text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] font-bold text-gray-900 tracking-tight leading-tight mb-6">
+                <h2 className="text-[2rem] text-gray-900 tracking-tight leading-tight mb-6">
                   Made for teams who just ship
                 </h2>
-                <p className="text-lg md:text-[1.3rem] text-gray-500 leading-relaxed max-w-2xl">
+                <p className="text-[1.3rem] font-light text-gray-500 leading-relaxed max-w-2xl">
                   Deploy, test, and scale your applications without the setup
                   hassle. Build faster and with delight.
                 </p>
@@ -40,17 +40,17 @@ const FeaturesThatMatter = () => {
           <div className="w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 border-t border-gray-100 bg-white">
               {/* ----------------Card 1--------------- */}
-              <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="pt-10 px-25 border-b lg:border-r border-gray-100 flex flex-col">
+                <h3 className="text-lg text-gray-900 mb-3 font-medium">
                   Scriptable deployments, zero downtime
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed">
+                <p className="text-gray-500 mb-10">
                   Automate your deployments with scripts and ship updates
                   instantly.
                 </p>
 
                 {/*-----------Mock Deployment Script------------ */}
-                <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 mt-auto overflow-hidden bg-innerBorderGray w-[80%] h-[50%]">
+                <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 overflow-hidden bg-innerBorderGray">
                   <div className="bg-white border border-gray-200 shadow-sm rounded-xl p-5 pb-12 pr-12">
                     <h4 className="text-[15px] font-semibold text-gray-900 mb-1">
                       Deployment Script
@@ -87,21 +87,22 @@ const FeaturesThatMatter = () => {
                       </div>
                     </div>
                   </div>
+
                   <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
                   <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
                 </div>
               </div>
 
               {/* -----------------Card 2------------ */}
-              <div className="p-10 md:p-14 px-6 border-b lg:border-l-0 border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="px-25 pt-10 border-b lg:border-l-0 border-gray-100 flex flex-col">
+                <h3 className="text-lg text-gray-900 mb-3 font-medium">
                   Free SSL certificates
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed">
+                <p className="text-gray-500">
                   Secure your sites from the get-go with free, automated SSL.
                 </p>
                 {/*------Mock Encrypt--------- */}
-                <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 mt-auto overflow-hidden bg-innerBorderGray w-[80%] h-[50%]">
+                <div className="relative pt-2 pl-2 rounded-tl-2xl border-t border-l border-gray-200 overflow-hidden bg-innerBorderGray my-auto">
                   <div className="bg-white border border-gray-200 shadow-sm rounded-xl pl-6 pt-6">
                     <div className="flex items-center space-x-3 mb-5">
                       <div className="w-8 h-8 bg-white border border-gray-200 rounded shadow-sm flex items-center justify-center relative flex-shrink-0">
@@ -150,18 +151,18 @@ const FeaturesThatMatter = () => {
               </div>
 
               {/* -------------------Card 3------------ */}
-              <div className="p-10 px-6 md:p-14 md:pl-[136px] lg:pl-[168px] border-b lg:border-r border-gray-100 flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="px-25 pt-10 border-b lg:border-r border-gray-100 flex flex-col">
+                <h3 className="text-lg text-gray-900 mb-3 font-medium">
                   Databases, managed
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed">
+                <p className="text-gray-500 mb-10">
                   Provision, back up, and monitor database clusters without
                   leaving Forge.
                 </p>
                 {/*----------Mock Database--------------- */}
                 <div className="relative overflow-hidden h-[60%]">
-                  <div className="absolute top-16 left-6 w-72 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl pl-2 z-0">
-                    <h4 className="text-[15px] font-bold text-gray-900 p-2">
+                  <div className="absolute top-16 w-72 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl pl-2">
+                    <h4 className="text-[15px] font-medium text-gray-900 p-2">
                       Database Details
                     </h4>
                     <div className="border-t border-l border-gray-200 p-3 rounded-2xl bg-white">
@@ -184,9 +185,9 @@ const FeaturesThatMatter = () => {
 
                   {/*---------Foreground Mock Database------- */}
 
-                  <div className="absolute top-0 left-44 w-80 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl p-2">
+                  <div className="absolute left-44 w-80 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl p-2">
                     <div className="p-6 z-10 border-l border-t border-gray-200 rounded-xl bg-white">
-                      <h4 className="text-[15px] font-bold text-gray-900 mb-6 whitespace-nowrap overflow-hidden relative">
+                      <h4 className="text-[15px] font-medium text-gray-900 mb-6 whitespace-nowrap overflow-hidden relative">
                         New backup configuration
                       </h4>
                       <div className="mb-5">
@@ -229,22 +230,22 @@ const FeaturesThatMatter = () => {
               </div>
 
               {/* ------------------Card 4-----------------*/}
-              <div className="p-10 md:p-14 flex flex-col px-6 border-b border-gray-100">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="px-25 pt-10 flex flex-col border-b border-gray-100">
+                <h3 className="text-lg text-gray-900 mb-3 font-medium">
                   Test faster with hosted domains
                 </h3>
-                <p className="text-gray-500 mb-12 text-lg leading-relaxed">
+                <p className="text-gray-500 mb-10">
                   Skip domain setup and launch your app instantly on a
                   on-forge.com domain.
                 </p>
 
                 {/*--------Forge Domain--------- */}
 
-                <div className="relative overflow-hidden h-[60%]">
+                <div className="relative overflow-hidden">
                   <div className="border border-gray-200 shadow-sm rounded-xl p-2 bg-innerBorderGray">
                     <div className="p-6 pb-12 pr-12 border-t border-l border-gray-200 rounded-xl bg-white">
                       <div className="mb-8">
-                        <h4 className="text-[15px] font-bold text-gray-900 mb-1">
+                        <h4 className="text-[15px] font-medium text-gray-900 mb-1">
                           Forge domain
                         </h4>
                         <p className="text-[13px] text-gray-500 mb-4">
@@ -291,32 +292,32 @@ const FeaturesThatMatter = () => {
 
           {/* ----------Bottom Grid----------*/}
           <div className="w-full">
-            <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100 bg-white border-b border-gray-100">
-              <div className="p-10 px-6 md:py-16 md:pr-10 lg:pr-14 md:pl-[136px] lg:pl-[168px] ">
-                <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
+            <div className="grid grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100 bg-white border-b border-gray-100">
+              <div className="pl-20 py-15">
+                <h4 className="text-[1.15rem]  text-gray-900 mb-3 font-medium">
                   Queues as they should be
                 </h4>
-                <p className="text-gray-500 leading-relaxed">
+                <p className="text-gray-500 w-[280px]">
                   Start and manage supervised queue workers directly. No more
                   manual Supervisor configuration.
                 </p>
               </div>
 
-              <div className="p-10 px-6 md:py-16 md:px-10 lg:px-14">
-                <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
+              <div className=" pl-20 py-15">
+                <h4 className="text-[1.15rem]  text-gray-900 mb-3 font-medium">
                   Task & job scheduling
                 </h4>
-                <p className="text-gray-500 leading-relaxed">
+                <p className="text-gray-500 w-[280px]">
                   Schedule recurring tasks with predefined intervals or custom
                   cron expressions.
                 </p>
               </div>
 
-              <div className="p-10 px-6 md:py-16 md:px-10 lg:px-14">
-                <h4 className="text-[1.15rem] font-bold text-gray-900 mb-3">
+              <div className=" pl-20 py-15">
+                <h4 className="text-[1.15rem] text-gray-900 mb-3 font-medium">
                   ⌘K anything
                 </h4>
-                <p className="text-gray-500 leading-relaxed">
+                <p className="text-gray-500 w-[280px]">
                   Do everything without reaching for the mouse with Forge's
                   feature-rich command palette.
                 </p>
