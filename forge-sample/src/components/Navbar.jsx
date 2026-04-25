@@ -1,17 +1,15 @@
-import React, {useState} from "react";
-import { Menu, X} from "lucide-react";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="w-full pb-15">
+    <nav className="w-full pb-15 relative">
       {/* ----------------Announcement Banner------------- */}
       <div className="bg-dark text-white flex text-center justify-center text-[13px] sm:text-[15px] hover:bg-zinc-800 cursor-pointer md:h-[2.2rem] py-2 px-4 tracking-tight">
         <span className="group inline-flex items-center hover:text-gray-300 transition-colors">
           Stop managing your database. Let Forge handle backups, patching, and
-          failover for you. 
-          Learn more
-          
+          failover for you. Learn more
           <span className="ml-1 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
             →
           </span>
@@ -51,28 +49,59 @@ const Navbar = () => {
           </div>
 
           {/*--------------Mobile Auth----------- */}
-          <div className="flex md:hidden items-center space-x-2">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors cursor-pointer" aria-label="Toggle Menu">
-              {menuOpen ? ( 
-                <X size={18}/>
-              ) : (
-                <Menu size={18} />
-              )}
+          <div className="flex md:hidden items-center">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors cursor-pointer"
+              aria-label="Toggle Menu"
+            >
+              <span
+                className="block transition-all duration-300 ease-in-out"
+                style={{
+                  transform: menuOpen
+                    ? "rotate(90deg) scale(1.1)"
+                    : "rotate(0deg) scale(1)",
+                  opacity: 1,
+                }}
+              >
+                {menuOpen ? (
+                  <X
+                    size={18}
+                    className="transition-all duration-300"
+                    strokeWidth={2.5}
+                  />
+                ) : (
+                  <Menu
+                    size={18}
+                    className="transition-all duration-300"
+                    strokeWidth={2.5}
+                  />
+                )}
+              </span>
             </button>
           </div>
         </div>
       </div>
 
       {/*------------Menu Bar: Mobile---------- */}
-      {menuOpen && (
-      <div className="md:hidden border-t border-gray-100 bg-white px-4 py-3 space-y-1">
-        {["Pricing", "Documentation", "Enterprise"].map((link) => (
-          <span key={link}
-          className="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium cursor-pointer transition-colors">
+      <div
+        className={`md:hidden absolute left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-b border-gray-100 shadow-lg px-4 py-3 space-y-1 transition-all duration-300 ease-in-out ${menuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+      >
+        {["Pricing", "Documentation", "Enterprise"].map((link, i) => (
+          <span
+            key={link}
+            className="block px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium cursor-pointer transition-colors"
+            style={{
+              transitionDelay: menuOpen ? `${i * 40}ms` : "0ms",
+              opacity: menuOpen ? 1 : 0,
+              transform: menuOpen ? "translateY(0)" : "translateY(-6px)",
+              transition: "opacity 0.25s ease, transform 0.25s ease",
+            }}
+          >
             {link}
           </span>
         ))}
-        <div className="pt-5 border-t border-gray-100">
+        <div className="py-5 border-t border-gray-100">
           <div className="flex flex-1 items-center justify-center space-x-3">
             <button className="px-[1.2rem] py-[0.5rem] text-gray-700 text-sm font-medium border border-gray-300 rounded-md hover:bg-gray-50 transition-colors cursor-pointer shadow-forge">
               Sign in
@@ -83,7 +112,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      )}
     </nav>
   );
 };
