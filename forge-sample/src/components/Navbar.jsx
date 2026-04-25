@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="w-full pb-15 relative">
+    <nav className="w-full md:pb-15 relative">
       {/* ----------------Announcement Banner------------- */}
       <div className="bg-dark text-white flex text-center justify-center text-[13px] sm:text-[15px] hover:bg-zinc-800 cursor-pointer md:h-[2.2rem] py-2 px-4 tracking-tight">
         <span className="group inline-flex items-center hover:text-gray-300 transition-colors">
