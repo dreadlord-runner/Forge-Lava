@@ -50,10 +50,10 @@ const WhyForge = () => {
             <div className="hidden md:block w-24 lg:w-[120px] shrink-0"></div>
             <div className="flex-1">
               <div className="max-w-5xl">
-                <h2 className="text-xl sm:text-[2rem] font-medium text-gray-900 tracking-tight leading-tight mb-4">
+                <h2 className="text-2xl sm:text-[2rem] font-medium text-gray-900 tracking-tight leading-tight mb-4">
                   An unbeatable standard for control without complexity
                 </h2>
-                <p className="text-base md:text-[1.3rem] font-light text-gray-500 max-w-[960px]">
+                <p className="text-lg md:text-[1.3rem] font-light text-gray-500 max-w-[960px]">
                   Forge is the next-generation server management platform built
                   for developers who want speed, control, and ease of use.
                   Designed by the Laravel team, it supports any modern web app
