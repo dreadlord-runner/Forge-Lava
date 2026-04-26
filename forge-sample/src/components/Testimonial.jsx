@@ -5,16 +5,23 @@ import mumsnetLogo from "../assets/images/mumsnet_active-BZyMx3wx.svg";
 import likkerLogo from "../assets/images/likker_active-LGmXIpRd.svg";
 import justinJacksonImage from "../assets/images/Justin_Jackson-B4TIG0MS.svg";
 
+const logos = [
+  { src: transistorLogo, alt: "Transistor", active: true },
+  { src: astaltyLogo, alt: "Astalty", active: false },
+  { src: mumsnetLogo, alt: "Mumsnet", active: false },
+  { src: likkerLogo, alt: "Likker", active: false },
+];
+
 const Testimonial = () => {
   return (
     <section>
       {/*-------------Header------------ */}
       <div className="flex items-stretch bg-innerBorderGray">
-        <div className="w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5">
+        <div className="w-10 sm:w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5">
           <span className="text-gray-400 font-mono text-xs md:text-sm">3</span>
         </div>
         <div className="flex-1 px-8 flex items-center space-x-3 font-mono text-xs">
-          <span className="uppercase tracking-[0.14em] text-headerGreen">
+          <span className="uppercase tracking-[0.14em] text-headerGreen whitespace-nowrap">
             Battle-Tested by the Best
           </span>
           <span className="text-gray-400 hidden sm:inline truncate">
@@ -27,43 +34,20 @@ const Testimonial = () => {
           <div className="bg-white">
             {/* -----------Logos Row---------- */}
             <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-100 border-b border-gray-100">
-              {/*---------Active Tab---------- */}
-              <div className="relative  flex items-center justify-center py-8 cursor-pointer hover:grayscale-0 hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]">
-                <img
-                  src={transistorLogo}
-                  alt="Transistor"
-                  className="h-8"
-                />
-              </div>
-
-              {/*--------Inactive Tab-------- */}
-              <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
-                <img
-                  src={astaltyLogo}
-                  alt="Astalty"
-                  className="h-8"
-                />
-              </div>
-              <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
-                <img
-                  src={mumsnetLogo}
-                  alt="mumsnet"
-                  className="h-8"
-                />
-              </div>
-              <div className="py-8 flex items-center justify-center cursor-pointer opacity-40 hover:opacity-100 grayscale transition-all duration-300 hover:grayscale-0 hover:bg-gray-50">
-                <img
-                  src={likkerLogo}
-                  alt="Likker"
-                  className="h-8"
-                />
-              </div>
+              {logos.map(({ src, alt, active }) => (
+                <div
+                  key={alt}
+                  className={`relative flex items-center justify-center py-6 sm:py-8 cursor-pointer transition-all duration-300 ${active ? "hover:bg-gray-50 after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:bg-[#10B981]" : "opacity-40 hover:opacity-100 grayscale hover:grayscale-0 hover:bg-gray-50"}`}
+                >
+                  <img src={src} alt={alt} className="h-6 sm:h-8" />
+                </div>
+              ))}
             </div>
 
             {/*----------Avatar Image----------- */}
-            <div className="grid grid-cols-1 md:grid-cols-16 divide-y md:divide-y-0 md:divide-x divide-gray-100 border-y border-gray-100">
-              <div className="md:col-span-4 flex items-center justify-center min-h-[460px] overflow-hidden bg-white py-18">
-                <div className="relative w-full">
+            <div className="flex flex-col md:flex-row md:divide-x divide-gray-100 border-y border-gray-100">
+              <div className="md:flex md:w-1/4 items-center justify-center overflow-hidden bg-white py-2 md:py-12">
+                <div className="relative w-[200px] sm:w-[300px] md:w-full">
                   <img
                     src={justinJacksonImage}
                     alt="Justin Jackson"
@@ -80,9 +64,9 @@ const Testimonial = () => {
               </div>
 
               {/*-----------Quote--------- */}
-              <div className="md:col-span-12 flex min-h-[440px] flex-col bg-white mt-20">
-                <div className="flex-1 px-12 pt-14 pb-10 md:px-16 md:pt-20 lg:px-20">
-                  <h2 className="max-w-[900px] font-serif text-[1.6rem] text-gray-900 leading-[1.35] mb-10">
+              <div className="flex-1 flex flex-col bg-white">
+                <div className="flex-1 px-6 sm:px-10 md:px-12 lg:px-20 pt-2 sm:pt-14 md:pt-20 pb-8 sm:pb-10">
+                  <h2 className="max-w-[900px] font-serif text-xl sm:text-2xl md:text-[1.6rem] text-gray-900 leading-[1.35] mb-8 sm:mb-10">
                     Forge makes it easy to manage the production and staging
                     versions of our site.
                   </h2>
@@ -94,7 +78,7 @@ const Testimonial = () => {
                   </div>
                 </div>
 
-                <div className="border-t bg-gray-50/50 border-gray-200 px-12 py-3 md:px-16 lg:px-20">
+                <div className="border-t bg-gray-50/50 border-gray-200 px-6 md:px-12 lg:px-20 py-3">
                   <p className="font-mono text-[13px] text-gray-400">
                     <span className="text-gray-900 ">Transistor.fm</span> runs{" "}
                     <span className="text-gray-900 ">2 servers</span> and{" "}

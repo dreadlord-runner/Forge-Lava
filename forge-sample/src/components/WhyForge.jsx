@@ -34,7 +34,7 @@ const WhyForge = () => {
           <span className="text-gray-400 font-mono text-xs md:text-sm">2</span>
         </div>
         <div className="flex-1 px-8 py-2 md:py-2.5 flex items-center space-x-3 font-mono text-xs">
-          <span className="text-headerGreen uppercase tracking-wide">
+          <span className="text-headerGreen uppercase tracking-wide whitespace-nowrap">
             Why Forge
           </span>
           <span className="text-gray-400 hidden sm:inline truncate">
