@@ -55,7 +55,7 @@ const DeploymentPlatform = () => {
               <h2 className="text-xl sm:text-[2rem] font-medium text-gray-900 tracking-tight leading-tight mb-4">
                 Simplify your deployments, build great apps
               </h2>
-              <p className="text-lg sm:text-[1.3rem] font-light text-gray-500 leading-tight max-w-xl">
+              <p className="text-base sm:text-[1.3rem] font-light text-gray-500 leading-tight max-w-xl">
                 Simplify deployment and server management with tools that scale,
                 without the DevOps complexity.
               </p>

@@ -19,7 +19,7 @@ const Hero = () => {
           The web is your frontier
         </h1>
 
-        <p className="mt-5 text-xl md:text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="mt-5 text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
           Forge gives root access to servers without the cognitive overhead.
           One-click instant provisioning, zero-downtime deployments, and
           automated SSL.
