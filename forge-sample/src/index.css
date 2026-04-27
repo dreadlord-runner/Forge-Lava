@@ -157,3 +157,7 @@ body {
     transform: translateY(-50%);
   }
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
