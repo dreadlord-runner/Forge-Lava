@@ -122,16 +122,15 @@ const FeaturesThatMatter = () => {
                       </label>
                     </div>
                     <div className="border border-gray-200 rounded-xl overflow-hidden flex flex-col bg-white">
-                      <div className="flex items-center p-4 border-b border-gray-200 flex-wrap gap-2">
+                      <div className="flex flex-1 items-center p-4 border-b border-gray-200 gap-2">
                         <div className="w-4 h-4 rounded-full border-[4px] border-[#10B981] flex-shrink-0"></div>
 
-                        <div className="ml-4 flex flex-wrap items-center gap-x-3">
+                        <div className="ml-2 flex items-center gap-x-3">
                           <span className=" text-gray-500">ECDSA</span>
                           <span className="text-gray-400 text-[14px]">
                             secp384r1
                           </span>
                         </div>
-
                         <span className="ml-auto text-[13px] tracking-wide text-headerGreen bg-[#10B981]/5 px-2 rounded-md border border-[#10B981]/20 whitespace-nowrap">
                           Recommended
                         </span>
