@@ -53,7 +53,7 @@ const LaravelVPS = () => {
         <div className="w-10 sm:w-16 md:w-24 lg:w-[120px] shrink-0 flex items-center justify-center py-2 md:py-2.5">
           <span className="text-[#4e564c] font-mono text-xs md:text-sm">4</span>
         </div>
-        <div className="flex-1 px-8 flex items-center space-x-3 font-mono text-xs">
+        <div className="flex-1 lg:px-8 flex items-center space-x-3 font-mono text-xs">
           <span className="text-headerGreen uppercase tracking-wider whitespace-nowrap">
             Laravel VPS
           </span>

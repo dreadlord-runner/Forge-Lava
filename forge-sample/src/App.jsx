@@ -24,7 +24,6 @@ const App = () => {
       <FeaturesThatMatter />
       <BuildForDevelopers />
       <GlobeStats />
-
       <Monitoring />
       <Faq />
       <Footer />
