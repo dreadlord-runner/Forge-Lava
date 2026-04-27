@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full md:pb-15 relative">
+    <nav
+      className={`w-full sticky top-0 z-50 bg-white transition-all duration-300 ${scrolled ? "border-b border-gray-100 shadow-sm" : "border-b border-transparent"}`}
+    >
       {/* ----------------Announcement Banner------------- */}
       <div className="bg-dark text-white flex text-center justify-center text-[13px] sm:text-[15px] hover:bg-zinc-800 cursor-pointer md:h-[2.2rem] py-2 px-4 tracking-tight">
         <span className="group inline-flex items-center hover:text-gray-300 transition-colors">

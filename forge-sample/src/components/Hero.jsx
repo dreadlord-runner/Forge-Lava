@@ -6,7 +6,7 @@ import VerticalLogoMarquee from "../assets/LOGOS";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden md:mt-15">
       <div className="h-[33px] w-[213px] mx-auto mb-5 bg-gradient-to-b from-green-300 to-gray-300 rounded-full p-[1px] shadow-md shadow-black/20">
         <div className="w-full h-full inline-flex items-center justify-evenly rounded-full bg-white text-sm font-medium text-gray-600 hover:bg-gray-50 cursor-pointer transition-colors">
           <Layers size={18} className="text-red-500" />
