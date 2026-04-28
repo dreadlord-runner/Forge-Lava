@@ -341,7 +341,7 @@ const Monitoring = () => {
 
             <div className="relative z-10 px-6 sm:px-10 flex flex-col md:flex-row items-start md:items-center">
               <div className="max-w-xl">
-                <h2 className="text-2xl md:text-3xl text-white tracking-tight leading-tight drop-shadow-md mb-3">
+                <h2 className="text-2xl md:text-3xl lg:max-w-[22rem] text-white tracking-tight leading-tight drop-shadow-md mb-3">
                   Take server management to the next level
                 </h2>
                 <p className="text-lg sm:text-xl text-gray-200 mb-6 drop-shadow">
