@@ -147,7 +147,7 @@ const FeaturesThatMatter = () => {
                     </div>
                   </div>
                   <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
-                  <div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+                  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
                 </div>
               </div>
 
@@ -162,7 +162,7 @@ const FeaturesThatMatter = () => {
                 </p>
                 {/*----------Mock Database--------------- */}
                 <div className="relative overflow-hidden">
-                  <div className="block absolute top-12 left-0 w-64 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl pl-2 z-0">
+                  <div className="block absolute top-20 left-0 w-64 bg-innerBorderGray border-t border-l border-gray-200 rounded-xl pl-2 z-0">
                     <h4 className="text-[15px] font-medium text-gray-900 p-2">
                       Database Details
                     </h4>
@@ -223,8 +223,8 @@ const FeaturesThatMatter = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute inset-y-0 right-0 w-82 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
-                  <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
+                  <div className="absolute inset-y-0 right-0 w-44 bg-gradient-to-r from-transparent to-white pointer-events-none z-20"></div>
+                  <div className="absolute inset-x-0 bottom-0 h-34 bg-gradient-to-b from-transparent to-white pointer-events-none z-20"></div>
                 </div>
               </div>
 
