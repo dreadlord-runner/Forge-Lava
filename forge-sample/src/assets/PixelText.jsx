@@ -26,14 +26,16 @@ export default function PixelText() {
     const createParticles = () => {
       const rootFontSize =
         parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-      const targetFontSize = rootFontSize * 20;
+
       const canvasWidth = Math.min(
         canvas.parentElement?.clientWidth || 1200,
         1200,
       );
 
-      ctx.font = `bold ${targetFontSize}px Arial`;
-      const fontSize = rootFontSize * 22; // fixed size
+      // ✅ Use smaller multiplier on mobile, full size on desktop
+      const isMobile = canvasWidth < 768;
+      const fontMultiplier = isMobile ? 6 : 22;
+      const fontSize = rootFontSize * fontMultiplier;
 
       ctx.font = `bold ${fontSize}px Arial`;
       const textMetrics = ctx.measureText(text);
